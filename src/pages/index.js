@@ -1,7 +1,4 @@
-import React from 'react'
-
-export default function index() {
-  return (
-    <div>index</div>
-  )
-}
+export { MovieList } from './MovieList'
+export { MovieDetail } from './MovieDetail'
+export { PageNotFound } from './PageNotFound'
+export { Search } from './Search'
