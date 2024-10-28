@@ -1,10 +1,11 @@
-import React from 'react'
+import { AllRoutes } from './routes/AllRoutes'
 
-export default function App() {
+function App() {
   return (
-    <div>
-      <h1 className='title'>Film Fax</h1>
-      <p> by NimiraTech</p>
+    <div className="App">
+      <AllRoutes />
     </div>
   )
 }
+
+export default App
