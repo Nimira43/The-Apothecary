@@ -9,6 +9,8 @@
 }
 
 :root {
+  --main-font: 'Poppins', sans-serif;
+  --logo-font: 'Great Vibes', cursive;
   --prime: #ff4500;
   --support: #008080;
   --dark: #111;
@@ -23,7 +25,6 @@
   --forest: #10bb10;
   --black: #000000;
   --white: #ffffff; 
-
   --size-1: 0.0625rem;            /* 1px */
   --size-2: 0.125rem;             /* 2px */
   --size-3: 0.1875rem;            /* 3px */
@@ -51,3 +52,4 @@
   --rem-15: 15rem;                /* 240px */
   --rem-20: 20rem;                /* 320px */
 }
+
