@@ -413,3 +413,67 @@ body {
   font-weight: 400;
   margin: var(--rem-2) 0;
 }
+
+.text-prime {
+  color: var(--prime);
+}
+
+.text-support {
+  color: var(--support);
+}
+
+.text-forest {
+  color: var(--forest);
+}
+
+.text-blaze {
+  color: var(--blaze);
+}
+
+.text-alert {
+  color: var(--alert);
+}
+
+.text-inform {
+  color: var(--inform);
+}
+
+.text-light {
+  color: var(--light);
+}
+
+.text-dark {
+  color: var(--dark);
+}
+
+.bg-prime {
+  background-color: var(--prime);
+}
+
+.bg-support {
+  background-color: var(--support);
+}
+
+.bg-forest {
+  background-color: var(--forest);
+}
+
+.bg-blaze {
+  background-color: var(--blaze);
+}
+
+.bg-alert {
+  background-color: var(--alert);
+}
+
+.bg-inform {
+  background-color: var(--inform);
+}
+
+.bg-light {
+  background-color: var(--light);
+}
+
+.bg-dark {
+  background-color: var(--dark);
+}
