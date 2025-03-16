@@ -7,3 +7,20 @@
   text-decoration: none;
   list-style-type: none;
 }
+
+:root {
+  --prime: #ff4500;
+  --support: #008080;
+  --dark: #111;
+  --light: #fffcfa;
+  --grey-dark: #333;
+  --grey-medium: #999;
+  --grey-light: #ccc;
+  --grey-light-extra: #eee;
+  --blaze: #ea1616;
+  --inform: #1b1bc6;
+  --alert: #ffd700;
+  --forest: #10bb10;
+  --black: #000000;
+  --white: #ffffff; 
+}
