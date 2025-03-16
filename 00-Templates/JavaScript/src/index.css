@@ -493,3 +493,41 @@ body {
 .w-25 {
   width: 25%;
 }
+
+.btn,
+.btn-prime,
+.btn-support,
+.btn-forest,
+.btn-blaze,
+.btn-alert,
+.btn-inform,
+.btn-dark,
+.btn-light {
+  margin: var(--size-4) var(--size-2);
+  padding: var(--size-8) var(--rem-1-25);
+  font-family: inherit;
+  font-weight: 400;
+  font-size: var(--rem-1);
+  letter-spacing: 0.6px;
+  border-radius: var(--size-3);
+  color: var(--white);
+  background-color: var(--black);
+  border: none;
+  box-shadow: 0 2px 5px rgba(51, 51, 51, 0.3);
+  transition: 0.3s ease-in;
+}
+
+.btn,
+.btn-prime,
+.btn-support,
+.btn-forest,
+.btn-blaze,
+.btn-alert,
+.btn-inform,
+.btn-dark,
+.btn-light {
+  cursor: pointer;
+  box-shadow: none;
+  transition: 0.3s ease-in;
+  background: rgba(0, 0, 0, 0.75);
+}
