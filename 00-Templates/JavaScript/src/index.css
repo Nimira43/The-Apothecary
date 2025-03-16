@@ -61,3 +61,20 @@ body {
 .logo {
   font-family: var(--logo-font);
 }
+
+.container {
+  max-width: 56.25rem;          /* 900px */
+  margin: 0 auto;
+}
+
+.container.container-sm {
+  max-width: 48.875rem;         /* 782px */
+}
+
+.container.container-md {
+  max-width: 80rem;             /* 1280px */
+}
+
+.container.container-lg {
+  max-width: 90rem;             /* 1440px */
+}
