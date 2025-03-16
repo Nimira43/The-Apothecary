@@ -4,8 +4,7 @@ function App() {
   return (
     <div>
       <h1 className='logo'>Artemis</h1>
-      <p>React 18 - Starter Boilerplate</p>
-      <p>Using Babel & Webpack</p>
+      <p>The Apothecary</p>
     </div>
   )
 }
