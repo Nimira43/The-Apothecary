@@ -53,3 +53,11 @@
   --rem-20: 20rem;                /* 320px */
 }
 
+body {
+  font-family: var(--main-font);
+  font-weight: 300;
+}
+
+.logo {
+  font-family: var(--logo-font);
+}
