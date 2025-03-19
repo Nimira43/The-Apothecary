@@ -685,6 +685,21 @@ body {
   }
 }
 
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: var(--size-3);
+}
+
+.card-body {
+  width: 100%;
+  padding: var(--rem-1);
+  border-radius: var(--size-8);
+}
+
 .navbar {
   display: flex;
   justify-content: center;
