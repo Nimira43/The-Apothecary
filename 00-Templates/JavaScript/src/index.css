@@ -12,7 +12,9 @@
   --main-font: 'Poppins', sans-serif;
   --logo-font: 'Great Vibes', cursive;
   --prime: #ff4500;
+  --prime-dark: #b43406;
   --support: #008080;
+  --support-dark: #014141;
   --dark: #111;
   --light: #fffcfa;
   --grey-dark: #333;
@@ -20,9 +22,13 @@
   --grey-light: #ccc;
   --grey-light-extra: #eee;
   --blaze: #ea1616;
+  --blaze-dark: #a71212;
   --inform: #1b1bc6;
+  --inform-dark: #111179;
   --alert: #ffd700;
+  --alert-dark: #ac9302;
   --forest: #10bb10;
+  --forest-dark: #096e09;
   --black: #000000;
   --white: #ffffff; 
   --size-1: 0.0625rem;     /* 1px */
@@ -613,4 +619,68 @@ body {
   align-items: center;
   justify-content: space-between;
   align-items: center;
+}
+
+.alert-prime {
+  background: rgba(255, 68, 0, 0.35);
+  border: 1px solid var(--prime);
+  color: var(--prime-dark);
+}
+
+.alert-support {
+  background: rgba(0, 128, 128, 0.35);
+  border: 1px solid var(--support);
+  color: var(--support-dark);
+}
+
+.alert-light {
+  background: rgba(255, 252, 250, 0.35);
+  border: 1px solid var(--light);
+  color: var(--white);
+}
+
+.alert-dark {
+  background: rgba(17, 17, 17, 0.35);
+  border: 1px solid var(--dark);
+  color: var(--black);
+}
+
+.alert-blaze {
+  background: rgba(234, 22, 22, 0.35);
+  border: 1px solid var(--blaze);
+  color: var(--blaze-dark);
+}
+
+.alert-inform {
+  background: rgba(27, 27, 198, 0.35);
+  border: 1px solid var(--inform);
+  color: var(--inform-dark);
+}
+
+.alert-forest {
+  background: rgba(16, 187, 16, 0.35);
+  border: 1px solid var(--forest);
+  color: var(--forest-dark);
+}
+
+.alert-alert {
+  background: rgba(255, 215, 0, 0.35);
+  border: 1px solid #343a40;
+  color: black;
+}
+
+.fadeAlert {
+  animation: fadeAlert 0.5s ease-in-out;
+}
+
+@keyframes fadeAlert {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
 }
