@@ -750,6 +750,85 @@ body {
   background-color: var(--grey-light);
 }
 
+.card-prime {
+  border: 1px solid var(--prime);
+}
+
+.card-prime .card-header,
+.card-prime .card-footer {
+  background-color: var(--prime);
+  color: var(--light);
+}
+
+.card-support {
+  border: 1px solid var(--support);
+}
+
+.card-support .card-header,
+.card-support .card-footer {
+  background-color: var(--support);
+  color: var(--light);
+}
+
+.card-light {
+  border: 1px solid var(--light);
+}
+
+.card-light .card-header,
+.card-light .card-footer {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.card-dark {
+  border: 1px solid var(--dark);
+}
+
+.card-dark .card-header,
+.card-dark .card-footer {
+  background-color: var(--dark);
+  color: var(--light);
+}
+.card-forest {
+  border: 1px solid var(--forest);
+}
+
+.card-forest .card-header,
+.card-forest .card-footer {
+  background-color: var(--forest);
+  color: var(--light);
+}
+
+.card-blaze {
+  border: 1px solid var(--blaze);
+}
+
+.card-blaze .card-header,
+.card-blaze .card-footer {
+  background-color: var(--blaze);
+  color: var(--light);
+}
+
+.card-alert {
+  border: 1px solid var(--alert);
+}
+
+.card-alert .card-header,
+.card-alert .card-footer {
+  background-color: var(--alert);
+  color: var(--dark);
+}
+
+.card-inform {
+  border: 1px solid var(--inform);
+}
+
+.card-inform .card-header,
+.card-inform .card-footer {
+  background-color: var(--inform);
+  color: var(--light);
+}
+
 .navbar {
   display: flex;
   justify-content: center;
