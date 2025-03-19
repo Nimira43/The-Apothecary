@@ -700,6 +700,18 @@ body {
   border-radius: var(--size-8);
 }
 
+.card-body .btn,
+.card-body .btn-prime,
+.card-body .btn-support,
+.card-body .btn-dark,
+.card-body .btn-light,
+.card-body .btn-forest,
+.card-body .btn-blaze,
+.card-body .btn-inform,
+.card-body .btn-alert {
+  margin-bottom: var(--rem-2);
+}
+
 .navbar {
   display: flex;
   justify-content: center;
