@@ -712,6 +712,44 @@ body {
   margin-bottom: var(--rem-2);
 }
 
+.card-title {
+  font-size: var(--rem-1-5);
+  font-weight: 500;
+  margin-bottom: var(--rem-1);
+}
+
+.card-text {
+  font-size: var(--rem-1);
+  font-weight: 400;
+  margin-bottom: var(--rem-1);
+}
+
+.card-header,
+.card-footer {
+  background-color: rgba(0, 0, 0, 0.05);
+  width: 100%;
+  padding: var(--rem-1);
+  font-weight: 500;
+  border-top-left-radius: var(--size-8);
+  border-top-right-radius: var(--size-8);
+  border-bottom: 1px solid rgba(102, 102, 102, 0.125);
+}
+
+.card-footer {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: var(--size-8);
+  border-bottom-right-radius: var(--size-8);
+  border-bottom: none;
+  border-top: 1px solid rgba(102, 102, 102, 0.125);
+}
+
+.card img {
+  width: 100%;
+  height: fit-content;
+  background-color: var(--grey-light);
+}
+
 .navbar {
   display: flex;
   justify-content: center;
