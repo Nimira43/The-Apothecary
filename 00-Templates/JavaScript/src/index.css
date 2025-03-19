@@ -569,3 +569,19 @@ body {
   background-color: var(--dark);
   color: var(--light);
 }
+
+.btn-sm {
+  margin: var(--size-3) 0.09375rem;
+  padding: 0.2625rem 0.9375rem;
+  font-size: var(--size-12);
+}
+
+.btn-lg {
+  margin: var(--size-5) 0.15625rem;
+  padding: 0.4375rem 1.5625rem;
+  font-size: var(--rem-1-25);
+}
+
+.btn-block {
+  width: 100%;
+}
