@@ -4,4 +4,20 @@
   <p><strong>Email:</strong>{{ email }}</p>
   <p><strong>Message:</strong>{{ message }}</p>
   <h3>Update Message</h3>
+
+  <input 
+    type="text"
+    [(ngMode)]="name"
+    placeholder="Enter full name"  
+  />
+  <input 
+    type="text"
+    [(ngMode)]="email"
+    placeholder="Enter email"  
+  />
+  <input 
+    type="text"
+    [(ngMode)]="message"
+    placeholder="Enter message"  
+  />
 </div>
