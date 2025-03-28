@@ -10,10 +10,29 @@ strong, h2, h3 {
   font-weight: 500;
 }
 
-.profile-card {
-  max-width: 400px;
-  margin: 20px auto;
-  padding: 20px;
-  border: 1px dotted #ff4500;
+strong {
+  display: block;
+  text-transform: uppercase;
+  color: #ffd700;
 }
 
+.profile-card {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px dotted #fffcfa;
+  border-radius: 5px;
+  background-color: #000;
+}
+
+h2, h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffd700;
+}
+
+p { 
+  font-size: 18px;
+  color: #fffcfa;
+
+}
