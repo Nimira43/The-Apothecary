@@ -1,7 +1,7 @@
-function Title({ text, color }) {
+function Title({ text, colour }) {
   return (
     <h1
-      className={`text-${color}`}
+      className={`text-${colour}`}
     >
       {!text ? 'Title' : text}
     </h1>
