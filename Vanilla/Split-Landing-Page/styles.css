@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Uncial+Antiqua&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Uncial+Antiqua&display=swap');
 
 :root {
   --primary: #ff4500;
@@ -18,12 +18,21 @@
 }
 
 body {
-  width: 100%;
   height: 100vh;
   margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   overflow: hidden;
-} */
+} 
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--grey-dark);
+}
+
+.split {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+}
