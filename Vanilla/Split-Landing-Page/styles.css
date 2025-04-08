@@ -25,6 +25,17 @@ body {
   overflow: hidden;
 } 
 
+h1 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  color: var(--light);
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -46,8 +57,7 @@ body {
 
 .split.right {
   right: 0;
-  background: url('./images/mountains.jpg');
-  
+  background: url('./images/mountains.jpg'); 
 }
 
 .split-left,
