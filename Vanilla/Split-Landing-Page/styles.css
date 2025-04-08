@@ -9,6 +9,8 @@
   --grey-medium: #999;
   --grey-light: #ccc;
   --grey-light-extra: #eee;
+  --bg-left: rgba(1, 56, 1, 0.7);
+  --bg-right: rgba(16, 16, 172, 0.7);
 }
 
 * {
@@ -40,14 +42,32 @@ body {
 .split.left {
   left: 0;
   background: url('./images/forest.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .split.right {
   right: 0;
   background: url('./images/mountains.jpg');
+  
+}
+
+.split-left,
+.split-right {
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.split.left::before,
+.split.right::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.split.left::before {
+  background-color: var(--bg-left);
+}
+
+.split.right::before {
+  background-color: var(--bg-right);
+}
