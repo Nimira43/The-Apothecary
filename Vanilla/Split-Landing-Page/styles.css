@@ -1,14 +1,9 @@
  @import url('https://fonts.googleapis.com/css2?family=Carattere&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Great+Vibes&family=Lexend:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Uncial+Antiqua&display=swap');
 
 :root {
-  --primary: #ff4500;
-  --support: #87ceeb;
-  --dark: #111;
   --light: #fffcfa;
   --grey-dark: #333;
-  --grey-medium: #999;
   --grey-light: #ccc;
-  --grey-light-extra: #eee;
   --bg-left: rgba(1, 56, 1, 0.7);
   --bg-right: rgba(16, 16, 172, 0.7);
 }
@@ -34,6 +29,31 @@ h1 {
   top: 20%;
   transform: translateX(-50%);
   white-space: nowrap;
+}
+
+.btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 50%;
+  top: 40%;
+  transform: translateX(-50%);
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--light);
+  border: 1px dotted var(--light);
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 15rem;
+  padding: 1.5rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn:hover {
+  color: var(--grey-light);
+  border: 1px solid var(--grey-light);
 }
 
 .container {
@@ -81,3 +101,4 @@ h1 {
 .split.right::before {
   background-color: var(--bg-right);
 }
+
