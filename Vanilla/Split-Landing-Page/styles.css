@@ -36,3 +36,18 @@ body {
   height: 100%;
   overflow: hidden;
 }
+
+.split.left {
+  left: 0;
+  background: url('./images/forest.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.split.right {
+  right: 0;
+  background: url('./images/mountains.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
