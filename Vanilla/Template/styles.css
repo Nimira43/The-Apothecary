@@ -10,3 +10,20 @@
   --grey-light: #ccc;
   --grey-light-extra: #eee;
 }
+
+* {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
