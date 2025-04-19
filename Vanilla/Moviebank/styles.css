@@ -29,6 +29,17 @@ header {
   background-color: var(--support);
 }
 
+.search {
+  background-color: var(--light);
+  border: none;
+  border-radius: 3px;
+  outline : none;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: var(--grey-dark);
+}
+
 main {
   display: flex;
   flex-wrap: wrap;
