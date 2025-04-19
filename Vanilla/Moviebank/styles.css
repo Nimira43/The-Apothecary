@@ -78,3 +78,9 @@ main {
   border-radius: 3px;
   font-weight: 400;
 }
+
+.overview {
+  background-color: var(--grey-light);
+  color: var(--grey-dark);
+  padding: 2rem;
+}
