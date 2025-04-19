@@ -64,6 +64,10 @@ main {
   letter-spacing: 0.5px;
 }
 
+.movie-info h3 {
+  margin-top: 0;
+}
+
 .movie img {
   width: 100%;
 }
