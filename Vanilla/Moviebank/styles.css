@@ -55,6 +55,10 @@ main {
   border-radius: 3px;
 }
 
+.movie img {
+  width: 100%;
+}
+
 .movie-info {
   color: var(--grey-dark);
   display: flex;
@@ -68,6 +72,9 @@ main {
   margin-top: 0;
 }
 
-.movie img {
-  width: 100%;
+.movie-info span {
+  background-color: var(--light);
+  padding: 0.25rem 0.5rem;
+  border-radius: 3px;
+  font-weight: 400;
 }
