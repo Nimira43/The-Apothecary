@@ -18,6 +18,7 @@ body {
   height: 100vh;
   margin: 0;
   overflow: hidden;
+  user-select: none;
 } 
 
 h1 {
@@ -107,4 +108,20 @@ h1 {
 .split.right::before,
 .split.left::before {
   transition: all 1000ms ease-in-out;
+}
+
+.hover-left .left {
+  width: 75%;
+}
+
+.hover-left .right {
+  width: 25%;
+}
+
+.hover-right .right {
+  width: 75%;
+}
+
+.hover-right .left {
+  width: 25%;
 }
