@@ -125,3 +125,14 @@ h1 {
 .hover-right .left {
   width: 25%;
 }
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2rem;
+    left: 30%;
+  }
+  .btn {
+    padding: 1.2rem;
+    width: 12rem;
+  }
+}
