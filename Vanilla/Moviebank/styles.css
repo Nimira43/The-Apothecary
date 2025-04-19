@@ -2,7 +2,7 @@
 
 :root {
   --primary: #ff4500;
-  --support: #87ceeb;
+  --support: #a6def5;
   --dark: #111;
   --light: #fffcfa;
   --grey-dark: #333;
@@ -19,4 +19,18 @@
 
 body {
   margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+.movie {
+  width: 300px;
+}
+
+.movie img {
+  width: 100%;
 }
