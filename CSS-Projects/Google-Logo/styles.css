@@ -23,9 +23,14 @@ body {
   position: relative;
 }
 
+.top, 
+.half,
+.line {
+  position: absolute;
+}
+
 .top,
 .half {
-  position: absolute;
   border-radius: 50%;
 }
 
@@ -42,4 +47,14 @@ body {
   border-right: 30px solid blue;
   transform: rotate(45deg);
   z-index: -1;
+}
+
+.line {
+  width: 80px;
+  height: 30px;
+  background-color: blue;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border-bottom-right-radius: 15px;
 }
