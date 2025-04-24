@@ -12,19 +12,34 @@ body {
   align-items: center;
 }
 
-.wrap {
+.wrap,
+.top,
+.half {
   width: 150px;
   height: 150px;
+}
+
+.wrap {
   position: relative;
 }
 
-.top {
+.top,
+.half {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  border-radius: 50%;
+}
+
+.top {
   border-top: 30px solid red;
   border-right: 30px solid transparent;
   border-bottom: 30px solid green;
   border-left: 30px solid gold;
-  border-radius: 50%;
+}
+
+.half {
+  position: absolute;
+  border: 30px solid transparent;
+  border-right: 30px solid blue;
+  transform: rotate(45deg);
+  z-index: -1;
 }
