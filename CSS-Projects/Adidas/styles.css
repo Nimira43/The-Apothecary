@@ -22,3 +22,7 @@ body {
   transform: rotate(-31deg);
 }
 
+.shape-1 {
+  top: 86px;
+  left: 36px;
+}
