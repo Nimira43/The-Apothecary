@@ -11,3 +11,9 @@ body {
   justify-content: center;
   align-items: center
 }
+
+.wrap {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
