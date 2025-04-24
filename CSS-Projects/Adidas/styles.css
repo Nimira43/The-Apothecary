@@ -13,3 +13,12 @@ body {
   position: absolute;
   overflow: hidden;
 }
+
+.shape {
+  width: 46px;
+  height: 150px;
+  background-color: #000;
+  position: absolute;
+  transform: rotate(-31deg);
+}
+
