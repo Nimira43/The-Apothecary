@@ -6,3 +6,10 @@ body {
   margin: 0;
   background-color: rgb(101, 1, 1);
 }
+
+.container {
+  width: 206px;
+  height: 120px;
+  position: absolute;
+  overflow: hidden;
+}
