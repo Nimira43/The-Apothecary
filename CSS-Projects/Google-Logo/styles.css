@@ -9,11 +9,22 @@ body {
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: center
+  align-items: center;
 }
 
 .wrap {
   width: 150px;
   height: 150px;
   position: relative;
+}
+
+.top {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-top: 30px solid red;
+  border-right: 30px solid transparent;
+  border-bottom: 30px solid green;
+  border-left: 30px solid gold;
+  border-radius: 50%;
 }
