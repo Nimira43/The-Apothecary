@@ -25,6 +25,38 @@
         Add
       </button>
     </div>
+    <ul>
+      <template
+        x-for="(task, index) in tasks"
+        :key="index"
+      >
+        <li>
+          <span x-text="task"></span>
+          <button
+            @click="removeTask(index)"  
+          >
+            Remove
+          </button>
+        </li>
+      </template>
+    </ul> 
   </div>
+  <script>
+    function todoApp() {
+      return {
+        newTask: '',
+        tasks: [],
+        addTask() {
+          if (this.newTask.trim() !== '') {
+            this.tasks.push(this.newTask.trim())
+            this.newTask = ''
+          }
+        },
+        removeTask(index) {
+          this.tasks.splice(index, 1)
+        }
+      }
+    }
+  </script>
 </body>
 </html>
