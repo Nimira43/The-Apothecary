@@ -8,6 +8,23 @@
   <title>To Do Application using Alpine JS</title>
 </head>
 <body>
-  
+  <div 
+    class="todo-container"
+    x-data="todoApp()"
+  >
+    <h1>To-Do List</h1>
+    <div class="todo">
+      <input 
+        x-model="newTask"
+        type="text"
+        placeholder="Add a new task"
+      >
+      <button 
+        @click="addTask"
+      >
+        Add
+      </button>
+    </div>
+  </div>
 </body>
 </html>
