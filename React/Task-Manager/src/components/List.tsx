@@ -1,21 +1,16 @@
-import React from 'react'
 import { type Task } from '../utils/types'
 
 type ListProps = {
-  tasks: Task[];
-  toggleTask: (id: string) => void;
+  tasks: Task[]
+  deleteTask: (id: string) => void
 }
 
-const List = ({ tasks, toggleTask }: ListProps) => (
+const List = ({ tasks, deleteTask }: ListProps) => (
   <ul>
     {tasks.map(task => (
       <li key={task.id}>
         <p>{task.description}</p>
-        <input
-          type='checkbox'
-          checked={task.isCompleted}
-          onChange={() => toggleTask(task.id)}
-        />
+        <button onClick={() => deleteTask(task.id)}>Delete Task</button>
       </li>
     ))}
   </ul>
