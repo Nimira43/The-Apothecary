@@ -1,11 +1,18 @@
 import React from 'react'
+import Form from './components/Form'
+import List from './components/List'
 import './index.css'
 
 function App() {
   return (
-    <div>
-      <h1 className='logo'>Artemis<br></br>Task Manager</h1>
-    </div>
+    <>
+      <h1>Task Manager</h1>
+      <Form />
+      <List />
+      <div>
+        <h1 className='logo'>Artemis<br></br>Task Manager</h1>
+      </div>
+    </>
   )
 }
 
