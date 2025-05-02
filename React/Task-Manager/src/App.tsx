@@ -5,9 +5,17 @@ import './index.css'
 import { useEffect, useState } from 'react'
 import { type Task } from './utils/types'
 
+function loadTasks(): Task[] {
+  const storedTasks = localStorage.getItem('tasks')
+  return storedTasks ? JSON.parse(storedTasks) : []
+}
+
+function updateStorage(tasks: Task[]): void {
+  localStorage.setItem('tasks', JSON.stringify(tasks))
+}
 
 function App() {
-  const [tasks, setTasks] = useState<Task[]>([])
+  const [tasks, setTasks] = useState<Task[]>(() => loadTasks())
 
   const addTask = (task: Task) => {
     setTasks([...tasks, task])
@@ -23,13 +31,16 @@ function App() {
       })
     )
   }
+  useEffect(() => {
+    updateStorage(tasks)
+  }, [tasks])
 
   return (
-    <section>
+    <div>
       <h1 className='logo'>Artemis<br></br>Task Manager</h1>
       <Form addTask={addTask}/>
       <List tasks={tasks} toggleTask={toggleTask}/>
-    </section>
+    </div>
   )
 }
 

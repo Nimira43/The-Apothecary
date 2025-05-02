@@ -26,4 +26,4 @@ const List = ({ tasks, toggleTask }: ListProps) => {
     </ul>
   )
 }
-export default List;
+export default List
