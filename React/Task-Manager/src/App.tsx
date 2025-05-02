@@ -28,7 +28,7 @@ function App() {
     <section>
       <h1 className='logo'>Artemis<br></br>Task Manager</h1>
       <Form addTask={addTask}/>
-      <List />
+      <List tasks={tasks} toggleTask={toggleTask}/>
     </section>
   )
 }
