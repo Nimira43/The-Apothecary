@@ -13,6 +13,17 @@ function App() {
     setTasks([...tasks, task])
   }
   
+  const toggleTask = ({ id }: { id: string }) => {
+    setTasks(
+      tasks.map((task) => {
+        if (task.id === id) {
+          return { ...task, isCompleted: !task.isCompleted }
+        }
+        return task
+      })
+    )
+  }
+
   return (
     <section>
       <h1 className='logo'>Artemis<br></br>Task Manager</h1>
