@@ -7,6 +7,8 @@ import { type Task } from './utils/types'
 
 
 function App() {
+  const [tasks, setTasks] = useState<Task[]>([])
+  
   return (
     <>
       <h1>Task Manager</h1>
