@@ -16,7 +16,7 @@ function App() {
   return (
     <section>
       <h1 className='logo'>Artemis<br></br>Task Manager</h1>
-      <Form />
+      <Form addTask={addTask}/>
       <List />
     </section>
   )
