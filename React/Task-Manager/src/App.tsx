@@ -10,14 +10,11 @@ function App() {
   const [tasks, setTasks] = useState<Task[]>([])
   
   return (
-    <>
-      <h1>Task Manager</h1>
+    <section>
+      <h1 className='logo'>Artemis<br></br>Task Manager</h1>
       <Form />
       <List />
-      <div>
-        <h1 className='logo'>Artemis<br></br>Task Manager</h1>
-      </div>
-    </>
+    </section>
   )
 }
 
