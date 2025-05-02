@@ -1,45 +1,33 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Form from './components/Form'
 import List from './components/List'
 import './index.css'
-import { useEffect, useState } from 'react'
 import { type Task } from './utils/types'
 
-function loadTasks(): Task[] {
-  const storedTasks = localStorage.getItem('tasks')
-  return storedTasks ? JSON.parse(storedTasks) : []
+const loadTasks = (): Task[] => {
+  return JSON.parse(localStorage.getItem('tasks') || '[]')
 }
 
-function updateStorage(tasks: Task[]): void {
-  localStorage.setItem('tasks', JSON.stringify(tasks))
-}
+const App = () => {
+  const [tasks, setTasks] = useState<Task[]>(loadTasks)
 
-function App() {
-  const [tasks, setTasks] = useState<Task[]>(() => loadTasks())
-
-  const addTask = (task: Task) => {
-    setTasks([...tasks, task])
-  }
-  
-  const toggleTask = ({ id }: { id: string }) => {
-    setTasks(
-      tasks.map((task) => {
-        if (task.id === id) {
-          return { ...task, isCompleted: !task.isCompleted }
-        }
-        return task
-      })
-    )
-  }
   useEffect(() => {
-    updateStorage(tasks)
+    localStorage.setItem('tasks', JSON.stringify(tasks))
   }, [tasks])
+
+  const addTask = (task: Task) => setTasks([...tasks, task])
+
+  const toggleTask = (id: string) => {
+    setTasks(tasks.map(task => 
+      task.id === id ? { ...task, isCompleted: !task.isCompleted } : task
+    ))
+  }
 
   return (
     <div>
-      <h1 className='logo'>Artemis<br></br>Task Manager</h1>
-      <Form addTask={addTask}/>
-      <List tasks={tasks} toggleTask={toggleTask}/>
+      <h1 className='logo'>Artemis Task Manager</h1>
+      <Form addTask={addTask} />
+      <List tasks={tasks} toggleTask={toggleTask} />
     </div>
   )
 }

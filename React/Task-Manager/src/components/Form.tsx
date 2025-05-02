@@ -7,39 +7,31 @@ type FormProps = {
 
 const Form = ({ addTask }: FormProps) => {
   const [text, setText] = useState('')
-  
+
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
+    if (!text.trim()) return alert('Please enter a task')
 
-    if (!text) {
-      alert('Please enter a Task')
-      return
-    }
     addTask({
-      id: new Date().getTime.toString(),
+      id: new Date().getTime().toString(),
       description: text,
-      isCompleted: false
+      isCompleted: false,
     })
 
     setText('')
   }
-  
+
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type='text'
-        value={text}
-        onChange={(e) => {
-          setText(e.target.value)
-        }}
+      <input 
+        type='text' 
+        value={text} 
+        onChange={(e) => setText(e.target.value)} 
       />
-      <button
-        type='submit'
-      >
-        Add Task
-      </button>
+      <button type='submit'>Add Task</button>
     </form>
   )
 }
 
 export default Form
+
