@@ -4,9 +4,7 @@ import './index.css'
 function App() {
   return (
     <div>
-      <h1 className='logo'>Artemis</h1>
-      <p>React 18 & TypeScript Starter Boilerplate</p>
-      <p>Using Babel and Webpack</p>
+      <h1 className='logo'>Artemis<br></br>Task Manager</h1>
     </div>
   )
 }
