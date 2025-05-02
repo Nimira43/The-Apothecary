@@ -8,6 +8,10 @@ import { type Task } from './utils/types'
 
 function App() {
   const [tasks, setTasks] = useState<Task[]>([])
+
+  const addTask = (task: Task) => {
+    setTasks([...tasks, task])
+  }
   
   return (
     <section>
