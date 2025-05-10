@@ -30,8 +30,3 @@ Thumbs.db
 # Ignore coverage reports
 coverage/
 
-# Ignore public files that shouldn't be tracked
-public/*.png
-public/*.jpg
-public/*.jpeg
-public/*.gif
