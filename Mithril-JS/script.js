@@ -44,3 +44,5 @@ let TodoApp = {
 }
 
 m.mount(document.body, TodoApp)
+
+// https://mithril.network/doc/
