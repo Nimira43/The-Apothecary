@@ -6,25 +6,28 @@ let TodoList = {
         text: task,
         done: false
       })
+      m.redraw()
     }
   },
   toggleTask(index) {
-    TodoList.tasks[index].done = !TodoList.tasks[index.done]
+    TodoList.tasks[index].done = !TodoList.tasks[index].done
+    m.redraw()
   }
 }
 
 let TodoApp = {
+  task: '',
   view() {
     return m('div', [
       m('h2', 'Mithril Task Manager'),
       m('input[type=text]', {
-        oninput: (e) => this.task = e.target.value,
-        value: this.task
+        oninput: (e) => TodoApp.task = e.target.value,
+        value: TodoApp.task
       }),
       m('button', {
-        onClick: () => {
-          TodoList.addTask(this.task)
-          this.task = ''
+        onclick: () => {
+          TodoList.addTask(TodoApp.task)
+          TodoApp.task = ''
         }
       }, 'Add Task'),
       m('ul', TodoList.tasks.map((task, index) =>
