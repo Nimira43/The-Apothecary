@@ -4,7 +4,7 @@ import './css/calendar.css'
 
 const App = () => {
   return (
-    <div>
+    <div className='container'>
       <Calender />
     </div>
   )
