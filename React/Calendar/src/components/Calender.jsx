@@ -60,9 +60,25 @@ const Calender = () => {
       <div className='events'>
         <div className='event-popup'>
           <div className='time-input'>
-            <div className='event-popup-time'>Time</div>
-            <input type='number' name='hours' min={0} max={24} className='hours' />
-            <input type='number' name='minutes' min={0} max={60} className='minutes' />
+            <div 
+              className='event-popup-time'
+            >
+              Time
+            </div>
+            <input 
+            type='number' 
+            name='hours' 
+            min={0} 
+            max={24} 
+            className='hours' 
+            />
+            <input 
+              type='number' 
+              name='minutes' 
+              min={0} 
+              max={60} 
+              className='minutes' 
+            />
           </div>
         </div>
       </div>
