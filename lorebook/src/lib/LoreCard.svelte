@@ -1,5 +1,5 @@
 <script>
-  export let name: string
+  export let name
 </script>
 
 <div class='card'>
