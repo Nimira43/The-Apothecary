@@ -138,17 +138,17 @@ body {
 }
 
 .search-input {
-  background-color: transparent;
-  color: var(--light);
-  border: 1px solid var(--light);
+  background-color: var(--grey-dark);
+  color: var(--light) !important;
+  border: none;
   border-radius: 3px;
   transition: var(--transition);
   outline: none;
 }
 
 .search-input:focus {
-  background-color: transparent;
-  border: 1px solid var(--gold);
+  background-color: var(--grey-dark);
+  border: none;
   box-shadow: none;
 }
 
