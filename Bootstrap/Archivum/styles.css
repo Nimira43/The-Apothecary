@@ -126,3 +126,13 @@ body {
   background-color: var(--grey-dark);
   border-radius: 3px;
 }
+
+.current {
+  background-color: var(--grey-dark);
+  border-radius: 3px;
+  transition: var(--transition);
+}
+
+.current:hover {
+  transform: translateY(-1px);
+}
