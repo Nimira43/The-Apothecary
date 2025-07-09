@@ -195,3 +195,13 @@ body {
     position: static;
   }
 } 
+
+.card-common {
+  box-shadow: 1px 2px 5px var(--grey-medium);
+  transition: var(--transition);
+}
+
+.card-common:hover {
+  box-shadow: 2px 3px 15px var(--grey-medium);
+  transform: translateY(-2px);
+}
