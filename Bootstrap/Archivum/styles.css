@@ -51,19 +51,19 @@ body {
   color: var(--gold);
 }
 
-.bg-dark {
+.bg-darkness {
   background-color: var(--dark);
 }
-.text-dark {
+.text-darkness {
   color: var(--dark);
 }
 
-.bg-light {
+.bg-lightness {
   background-color: var(--light);
 }
 
-.text-light {
-  color: var(--light);
+.text-lightness {
+  color: var(--light) !important;
 }
 
 .bg-grey-dark {
@@ -98,8 +98,8 @@ body {
   color: var(--grey-light-extra);
 }
 
-.uppercase {
-  text-transform: uppercase;
+.name {
+  text-decoration: none;
 }
 
 .sidebar {
@@ -134,5 +134,5 @@ body {
 }
 
 .current:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
 }
