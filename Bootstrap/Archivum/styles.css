@@ -156,6 +156,9 @@ body {
   padding: 10px 10px;
   background-color: transparent;
   color: var(--light);
+}
+
+.search-button i {
   transition: var(--transition);
 }
 
@@ -163,7 +166,7 @@ body {
   box-shadow: none;
 }
 
-.search-button:hover {
-  color: var(--gold);
+.search-button:hover i {
+  color: var(--gold) !important;
 }
 
