@@ -98,7 +98,7 @@ body {
   color: var(--grey-light-extra);
 }
 
-.name {
+.name:hover {
   text-decoration: none;
 }
 
