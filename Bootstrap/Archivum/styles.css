@@ -5,10 +5,78 @@
   font-weight: 300;
 }
 
-.logo {
-  font-family: 'Caveat', cursive;
+:root {
+  --main: #ff4500;
+  --support: #008080;
+  --gold: #ffd700;
+  --dark: #111;
+  --light: #fffcfa;
+  --grey-dark: #333;
+  --grey-medium: #999;
+  --grey-light: #ccc;
+  --grey-light-extra: #eee;
+  --transition: all 0.5s ease-in;
 }
 
 body {
   background-color: #fffcfa;
+}
+
+.logo {
+  font-family: 'Caveat', cursive;
+}
+
+.bg-main {
+  background-color: var(--main);
+}
+.text-main {
+  color: var(--main);
+}
+.bg-support {
+  background-color: var(--support);
+}
+.text-support {
+  color: var(--support);
+}
+.bg-gold {
+  background-color: var(--gold);
+}
+.text-gold {
+  color: var(--gold);
+}
+.bg-dark {
+  background-color: var(--dark);
+}
+.text-dark {
+  color: var(--dark);
+}
+.bg-light {
+  background-color: var(--light);
+}
+.text-light {
+  color: var(--light);
+}
+.bg-grey-dark {
+  background-color: var(--grey-dark);
+}
+.text-grey-dark {
+  color: var(--grey-dark);
+}
+.bg-grey-medium {
+  background-color: var(--grey-medium);
+}
+.text-grey-medium {
+  color: var(--grey-medium);
+}
+.bg-grey-light {
+  background-color: var(--grey-light);
+}
+.text-grey-light {
+  color: var(--grey-light);
+}
+.bg-grey-light-extra {
+  background-color: var(--grey-extra);
+}
+.text-grey-light-extra {
+  color: var(--grey-light-extra);
 }
