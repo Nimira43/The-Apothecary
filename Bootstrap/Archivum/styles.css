@@ -23,7 +23,8 @@ body {
 }
 
 .logo {
-  font-family: 'Caveat', cursive;
+  font-family: 'Bytesized', sans-serif;
+  font-size: 24px;
 }
 
 .bg-main {
