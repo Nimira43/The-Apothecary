@@ -136,3 +136,34 @@ body {
 .current:hover {
   transform: translateY(-2px);
 }
+
+.search-input {
+  background-color: transparent;
+  color: var(--light);
+  border: 1px solid var(--light);
+  border-radius: 3px;
+  transition: var(--transition);
+  outline: none;
+}
+
+.search-input:focus {
+  background-color: transparent;
+  border: 1px solid var(--gold);
+  box-shadow: none;
+}
+
+.search-button {
+  padding: 10px 10px;
+  background-color: transparent;
+  color: var(--light);
+  transition: var(--transition);
+}
+
+.search-button:focus {
+  box-shadow: none;
+}
+
+.search-button:hover {
+  color: var(--gold);
+}
+
