@@ -52,8 +52,9 @@ body {
 }
 
 .bg-darkness {
-  background-color: var(--dark);
+  background-color: var(--dark) !important;
 }
+
 .text-darkness {
   color: var(--dark);
 }
