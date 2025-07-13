@@ -1,0 +1,9 @@
+.title {
+  position: absolute;
+  color: var(--main);
+  background-color: var(--dark);
+  right: 30px;
+  bottom: 30px;
+  padding: 10px;
+}
+
