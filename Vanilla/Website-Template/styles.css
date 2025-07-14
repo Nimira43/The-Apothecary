@@ -1,1 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Fredericka+the+Great&display=swap');
+
+* {
+  font-family: 'Cormorant Garamond', serif;
+  font-family: 300;
+}
+
+.logo {
+  font-family: 'Fredericka the Great', serif;
+}
