@@ -22,9 +22,19 @@ html {
   --grey-dark: #333;
   --grey-medium: #999;
   --grey-light: #ccc;
-  --greu-light-extra: #eee;
+  --grey-light-extra: #eee;
 }
 
 .logo {
   font-family: 'Fredericka the Great', serif;
+}
+
+.navbar {
+  width: 100%;
+  height: 19rem;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 1rem 5rem rgba(0, 0, 0, 0.1)
 }
