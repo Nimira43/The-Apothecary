@@ -54,3 +54,9 @@ html {
   align-items: center;
 }
 
+.logo i {
+  font-size: 6rem;
+  color: var(--main);
+  margin-right: 2rem;
+}
+
