@@ -98,6 +98,12 @@ html {
   margin-right: 1.2rem;
 }
 
+.nav-list {
+  display: flex;
+  height: 8.5rem;
+  padding-top: 2rem;
+}
+
 .nav-list div {
   width: 16rem;
   display: flex;
@@ -111,6 +117,11 @@ html {
 .nav-list div:nth-child(1) {
   border: none;
 }
+
+.nav-list div span {
+  text-transform: uppercase;
+}
+
 
 .nav-list i {
   font-size: 2rem;
