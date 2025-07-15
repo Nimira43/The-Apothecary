@@ -98,4 +98,24 @@ html {
   margin-right: 1.2rem;
 }
 
+.nav-list div {
+  width: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-left: 0.1rem solid var(--main);
+  cursor: pointer;
+}
+
+.nav-list div:nth-child(1) {
+  border: none;
+}
+
+.nav-list i {
+  font-size: 2rem;
+  color: var(--main);
+  margin-bottom: 1rem
+}
+
 
