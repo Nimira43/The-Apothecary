@@ -76,4 +76,10 @@ html {
   color: var(--dark);
 }
 
+.search-bar input::placeholder {
+  color: var(--grey-medium);
+}
+
+
+
 
