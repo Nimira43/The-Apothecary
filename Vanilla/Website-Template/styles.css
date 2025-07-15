@@ -94,4 +94,8 @@ html {
   color: var(--main);
 }
 
+.user i, .user span {
+  margin-right: 1.2rem;
+}
+
 
