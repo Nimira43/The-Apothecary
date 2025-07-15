@@ -182,3 +182,12 @@ html {
   }
 }
 
+@media (max-width: 450px) {
+  html {
+    font-size: 32%
+  };
+  .logo span {
+    display: none;
+  }
+}
+
