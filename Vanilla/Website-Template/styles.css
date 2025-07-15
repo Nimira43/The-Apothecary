@@ -62,4 +62,18 @@ html {
   color: var(--main)
 }
 
+.search-bar {
+  position: relative;
+}
+
+.search-bar input {
+  width: 52rem;
+  padding: 1.2rem 1.4rem 1.2rem 3.7rem;
+  background-color: transparent;
+  border: 1px solid var(--grey-dark);
+  border-radius: 0.3rem;
+  font-size: 1.6rem;
+  color: var(--dark);
+}
+
 
