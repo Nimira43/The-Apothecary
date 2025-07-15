@@ -89,4 +89,9 @@ html {
   color: var(--grey-dark);
 }
 
+.user {
+  font-size: 2rem;
+  color: var(--main);
+}
+
 
