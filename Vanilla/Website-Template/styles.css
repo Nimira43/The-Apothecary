@@ -123,11 +123,21 @@ html {
   font-size: 1.6rem;
 }
 
-
 .nav-list i {
   font-size: 2rem;
   color: var(--main);
   margin-bottom: 1rem
 }
 
+@media (max-width: 1400px) {
+  html {
+    font-size: 54%
+  }
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 51%
+  }
+}
 
