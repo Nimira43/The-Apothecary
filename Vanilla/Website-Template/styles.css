@@ -153,3 +153,19 @@ html {
   }
 }
 
+@media (max-width: 800px) {
+  html {
+    font-size: 39%;
+  }
+
+  .logo i {
+    font-size: 4rem;
+  }
+
+  .search-bar input  {
+    width: 30rem;
+  }
+}
+
+@
+
