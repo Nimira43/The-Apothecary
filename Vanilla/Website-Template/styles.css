@@ -167,5 +167,18 @@ html {
   }
 }
 
-@
+@media (max-width: 600px) {
+  html {
+    font-size: 35%;
+  } 
+  .logo span {
+    font-size: 3rem;
+  }
+  .search-bar input {
+    width: 26rem;
+  }
+  .nav-list div {
+    width: 12rem;
+  }
+}
 
