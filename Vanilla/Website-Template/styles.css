@@ -141,3 +141,15 @@ html {
   }
 }
 
+@media (max-width: 1000px) {
+  html {
+    font-size: 46%;
+  }
+  .navbar-top div {
+    margin: 0 2rem;
+  }
+  .search-bar input {
+    width: 40rem;
+  }
+}
+
