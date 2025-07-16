@@ -242,6 +242,9 @@ html {
   .search-bar input {
     width: 40rem;
   }
+  .banner-heading {
+    font-size: 6rem;
+  }
 }
 
 @media (max-width: 800px) {
