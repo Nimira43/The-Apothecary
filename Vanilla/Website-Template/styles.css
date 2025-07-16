@@ -211,9 +211,15 @@ html {
 }
 
 
+@media (max-width: 1600px) {
+  .banner {
+    width: 70%;
+  }
+}
+
 @media (max-width: 1400px) {
   html {
-    font-size: 54%
+    font-size: 54%;
   }
 }
 
