@@ -180,6 +180,18 @@ html {
   text-shadow: 0 3rem 3rem rgba(0, 0, 0, 0.8);
 }
 
+.banner-btn {
+  position: absolute;
+  top: 28rem;
+  width: 18rem;
+  height: 4rem;
+  border: none;
+  border-radius: 3rem;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: all 0.5s ease-in;
+}
+
 @media (max-width: 1400px) {
   html {
     font-size: 54%
