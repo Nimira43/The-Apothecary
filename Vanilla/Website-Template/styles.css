@@ -155,8 +155,8 @@ html {
   left: 50%;
   transform: translateX(-50%);
   background-image: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5));
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.9));
   border-radius: 3rem;
 }
 
@@ -170,14 +170,15 @@ html {
 
 .banner-heading {
   position: absolute;
+  text-align: center;
   top: 10rem;
   right: 5rem;
   width: 40%;
   font-size: 8rem;
   line-height: 1;
   color: var(--light);
-  background-color: var(--dark);
-  text-align: right;
+  
+  text-align: center;
   
 }
 
@@ -273,6 +274,18 @@ html {
   }
   .nav-list div {
     width: 12rem;
+  }
+  .landing {
+    height: 75vh;
+  }
+  .banner-heading {
+    width: 30rem;
+  }
+  .banner-btn {
+    width: 15rem;
+  }
+  .banner-btn-1 {
+    right: 22rem;
   }
 }
 
