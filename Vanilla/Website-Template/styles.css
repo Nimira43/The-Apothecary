@@ -227,6 +227,9 @@ html {
   html {
     font-size: 51%
   }
+  .banner {
+    width: 80%;
+  }
 }
 
 @media (max-width: 1000px) {
