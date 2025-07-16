@@ -136,6 +136,17 @@ html {
   position: relative;
 }
 
+.landing-bg {
+  position: absolute;
+  top: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  height: 65rem;
+  background-color: green; 
+  border-radius: 3rem;
+}
+
 @media (max-width: 1400px) {
   html {
     font-size: 54%
