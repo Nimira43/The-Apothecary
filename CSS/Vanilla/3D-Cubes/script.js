@@ -19,6 +19,7 @@ function cubes() {
     }
     container.appendChild(cube)
   })
+  activeRandomCube()
 }
 
 function activeRandomCube() {
@@ -28,8 +29,12 @@ function activeRandomCube() {
     let randomIndex = Math.floor(Math.random() * spans.length)
     let randomSpan = spans[randomIndex]
 
+    randomSpan.classList('active')
 
-  })
+    setTimeout(() => {
+      randomSpan.classList.remove('active')
+    }, 2000)
+  }, 500)
 }
 
 cubes()
