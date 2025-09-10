@@ -37,6 +37,11 @@ body {
   transition: 1.5s;
 }
 
+.container .cube div span.active {
+  background: #210101;
+  transform: translate(0, -50px);
+}
+
 .container .cube div span::before {
   content: '';
   position: absolute;

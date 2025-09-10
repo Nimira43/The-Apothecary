@@ -29,7 +29,7 @@ function activeRandomCube() {
     let randomIndex = Math.floor(Math.random() * spans.length)
     let randomSpan = spans[randomIndex]
 
-    randomSpan.classList('active')
+    randomSpan.classList.add('active')
 
     setTimeout(() => {
       randomSpan.classList.remove('active')
