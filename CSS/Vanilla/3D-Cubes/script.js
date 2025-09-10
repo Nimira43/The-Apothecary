@@ -15,8 +15,10 @@ function cubes() {
       let span = document.createElement('span')
       span.style.setProperty('--i', 3)
       div.appendChild(span)
+      cube.appendChild(div)
     }
-
-
+    container.appendChild(cube)
   })
 }
+
+cubes()
