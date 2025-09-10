@@ -21,4 +21,6 @@ function cubes() {
   })
 }
 
+function activeRandomCube() {}
+
 cubes()
