@@ -23,6 +23,7 @@ body {
 
 .container .cube div {
   position: absolute;
+  translate: calc(-70px * var(--x)) calc(-70px * var(--y))
 }
 
 .container .cube div span{
