@@ -7,6 +7,16 @@ function cubes() {
     cube.classList.add('cube')
     cube.style.setProperty('--z', z)
 
-    for (let x = -3; x <= 3; x++) {}
+    for (let x = -3; x <= 3; x++) {
+      let div = document.createElement('div')
+      div.style.setProperty('--x', x)
+      div.style.setProperty('--y', 0)
+    
+      let span = document.createElement('span')
+      span.style.setProperty('--i', 3)
+      div.appendChild(span)
+    }
+
+
   })
 }
