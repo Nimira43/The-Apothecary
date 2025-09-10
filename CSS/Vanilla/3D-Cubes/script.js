@@ -21,6 +21,15 @@ function cubes() {
   })
 }
 
-function activeRandomCube() {}
+function activeRandomCube() {
+  let spans = document.querySelectorAll('.cube span')
+
+  setInterval(() => {
+    let randomIndex = Math.floor(Math.random() * spans.length)
+    let randomSpan = spans[randomIndex]
+
+
+  })
+}
 
 cubes()
