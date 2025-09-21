@@ -1,5 +1,8 @@
 #!/usr/bin/env perl
 
+use strict;
 use warnings;
 
-print('Hello to the Perl World!');
+my $name = "Perl";
+
+print("Hello to the $name World!");
