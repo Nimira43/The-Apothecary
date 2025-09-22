@@ -116,3 +116,11 @@ foreach my $champ (@{$Formula1Team{championship_partners}{driver}}) {
   print "$champ->{name} ($champ->{nationality}) won in: @{$champ->{mclaren_championships}}\n";
 }
 
+print("Loop through Championship partners:" . "\n");
+foreach my $engine (@{$Formula1Team{championship_partners}{engine}}) {
+  print "$engine->{name} ($engine->{nationality})\n";
+  print "  Driver Titles: @{$engine->{mclaren_championships}{drivers}}\n";
+  print "  Constructor Titles: @{$engine->{mclaren_championships}{constructors}}\n";
+}
+
+
