@@ -99,15 +99,20 @@ print("Show complete hash" . "\n");
 print Dumper(\%Formula1Team);
 print("\n");
 
-print("Extracting data" . "\n");
+print("Extracting data:" . "\n");
 print "Team Name: $Formula1Team{name}\n";
 print "Engine: $Formula1Team{engine}\n";
 print "Driver 1: $Formula1Team{drivers}[0]\n";
 print "Driver 2: $Formula1Team{drivers}[1]\n";
 
-
+print("Access nested hashes:" . "\n");
 print "Driver Championships: @{$Formula1Team{championships}{drivers}}\n";
 print "Constructor Championships: @{$Formula1Team{championships}{constructors}}\n";
-
 print "Total Wins: $Formula1Team{stats}{wins}\n";
 print "Total Points: $Formula1Team{stats}{points}\n";
+
+print("Loop through Championship partners:" . "\n");
+foreach my $champ (@{$Formula1Team{championship_partners}{driver}}) {
+  print "$champ->{name} ($champ->{nationality}) won in: @{$champ->{mclaren_championships}}\n";
+}
+
