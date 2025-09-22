@@ -106,3 +106,8 @@ print "Driver 1: $Formula1Team{drivers}[0]\n";
 print "Driver 2: $Formula1Team{drivers}[1]\n";
 
 
+print "Driver Championships: @{$Formula1Team{championships}{drivers}}\n";
+print "Constructor Championships: @{$Formula1Team{championships}{constructors}}\n";
+
+print "Total Wins: $Formula1Team{stats}{wins}\n";
+print "Total Points: $Formula1Team{stats}{points}\n";
