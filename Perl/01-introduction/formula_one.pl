@@ -123,4 +123,15 @@ foreach my $engine (@{$Formula1Team{championship_partners}{engine}}) {
   print "  Constructor Titles: @{$engine->{mclaren_championships}{constructors}}\n";
 }
 
+print("Subroutine to find champions by year:" . "\n");
+sub find_driver_by_year {
+  my ($year) = @_;
+  foreach my $champ (@{$Formula1Team{championship_partners}{driver}}) {
+    if (grep { $_ == $year } @{$champ->{mclaren_championships}}) {
+      print "$year Champion: $champ->{name} ($champ->{nationality})\n";
+    }
+  }
+}
+find_driver_by_year(1991);
+find_driver_by_year(1976);
 
