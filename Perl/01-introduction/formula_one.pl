@@ -2,6 +2,7 @@
 
 use strict;
 use warnings;
+use Data::Dumper;
 
 my %Formula1Team = (
   name    => "McLaren",
@@ -92,5 +93,7 @@ my %Formula1Team = (
       },
     ]
   }
-)
+);
+
+print Dumper(\%Formula1Team);
 
