@@ -27,3 +27,8 @@ my $num1 = 34;
 my $num2 = 25;
 print $num1 + $num2 . "\n";
 print("The sum of $num2 plus $num1 is " . ($num1 + $num2) . "\n");
+
+my $string_number = "85";
+print $num1 + $string_number . "\n";
+my $string1 = "Orange";
+# print $num1 + $string1 . "\n";
