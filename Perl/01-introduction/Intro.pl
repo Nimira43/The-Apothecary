@@ -71,3 +71,10 @@ gt lt ge le > < >= <= !=
 
 print("Repeating a string\n");
 print($string2 x 5 . "\n");
+
+# Arrays
+print("Arrays". "\n");
+my @fruits = ("Apple", "Banana", "Orange", "Mangos", "Pears", "Peaches");
+print @fruits;
+print $fruits[0] . "\n";  # Apple
+print $fruits[2] . "\n";  # Orange
