@@ -42,12 +42,12 @@ print $num1 + $num2 . "\n";
 print $num1 / $num2 . "\n";
 print $num1 - $num2 . "\n";
 print $num1 * $num2 . "\n";
+print $num1 % $num2 . "\n";
 
 print("Comparisons\n");
 print $num1 > $num2 . "\n";
 print $num1 < $num2 . "\n";
 print $num2 == $num1 . "\n";
-print $num1 % $num2 . "\n";
-print $string1 == $string1 . "\n";
-print $string1 == $string2 . "\n";
-print $string1 == $string3 . "\n";
+print $string1 eq $string1 . "\n";
+print $string1 eq $string2 . "\n";
+print $string1 eq $string3 . "\n";
