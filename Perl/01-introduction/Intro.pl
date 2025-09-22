@@ -45,9 +45,29 @@ print $num1 * $num2 . "\n";
 print $num1 % $num2 . "\n";
 
 print("Comparisons\n");
-print $num1 > $num2 . "\n";
-print $num1 < $num2 . "\n";
-print $num2 == $num1 . "\n";
-print $string1 eq $string1 . "\n";
-print $string1 eq $string2 . "\n";
-print $string1 eq $string3 . "\n";
+print (($num1 > $num2) . "\n");
+print (($num1 < $num2) . "\n");
+print (($num2 == $num1) . "\n");
+print (($string1 eq $string1) . "\n");
+print (($string1 eq $string2) . "\n");
+print (($string1 eq $string3) . "\n");
+
+print("Comparisons - displaying true or false\n");
+
+sub boolify {
+  return $_[0] ? "true" : " false";
+}
+
+print boolify($num1 > $num2) . "\n";
+print boolify($num1 < $num2) . "\n";
+print boolify($num2 == $num1) . "\n";
+print boolify($string1 eq $string1) . "\n";
+print boolify($string1 eq $string2) . "\n";
+print boolify($string1 eq $string3) . "\n";
+
+=begin
+gt lt ge le > < >= <= != 
+=cut
+
+print("Repeating a string\n");
+print($string2 x 5 . "\n");
