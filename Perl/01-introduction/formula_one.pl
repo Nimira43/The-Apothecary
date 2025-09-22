@@ -95,5 +95,14 @@ my %Formula1Team = (
   }
 );
 
+print("Show complete hash" . "\n");
 print Dumper(\%Formula1Team);
+print("\n");
+
+print("Extracting data" . "\n");
+print "Team Name: $Formula1Team{name}\n";
+print "Engine: $Formula1Team{engine}\n";
+print "Driver 1: $Formula1Team{drivers}[0]\n";
+print "Driver 2: $Formula1Team{drivers}[1]\n";
+
 
