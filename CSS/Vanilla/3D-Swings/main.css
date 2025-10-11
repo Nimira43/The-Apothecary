@@ -95,3 +95,12 @@ html {
   border-radius: 0.5rem;
   transform: translateZ(0.3rem);
 }
+
+.rope {
+  height: 40rem;
+  width: 0.3rem;
+  background-color: #555454;
+  position: absolute;
+  transform: translateZ(20rem) rotateX(90deg) rotateY(90deg);
+  transform-origin: top;
+}
