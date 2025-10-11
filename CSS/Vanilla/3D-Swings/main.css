@@ -55,7 +55,7 @@ html {
 }
 
 .swing-6 {
-  animation: swingAnim 4s -1s infinite ease-in-out;
+  animation: swing6Anim 4s -1s infinite ease-in-out;
   background-color: transparent;
 }
 
