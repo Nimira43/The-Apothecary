@@ -104,3 +104,12 @@ html {
   transform: translateZ(20rem) rotateX(90deg) rotateY(90deg);
   transform-origin: top;
 }
+
+.rope-1 {
+  top: 10rem;
+  left: 2.5rem;
+}
+.rope-2 {
+  top: 10rem;
+  right: 2.5rem;
+}
