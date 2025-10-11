@@ -34,6 +34,15 @@ html {
   transform-origin: top;
 }
 
+.swing-6 div:not(.ball) {
+  opacity: 0;
+}
+
+.swing-6::before,
+.swing-6::after {
+  opacity: 0;
+}
+
 .swing::before {
   content: '';
   width: 1rem;
