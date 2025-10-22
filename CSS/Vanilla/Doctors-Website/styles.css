@@ -13,4 +13,11 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+.centre {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
