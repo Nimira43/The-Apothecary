@@ -16,6 +16,18 @@ html {
   scroll-behavior: smooth;
 }
 
+:root {
+  --main: green;
+  --main-dark: darkgreen;
+  --main-light: lightgreen;
+  --light: #fafffa;
+  --dark: #111;
+  --grey-1: #333;
+  --grey-2: #999;
+  --grey-3: #ccc;
+  --grey-4: #eee;
+}
+
 .centre {
   display: flex;
   justify-content: center;
