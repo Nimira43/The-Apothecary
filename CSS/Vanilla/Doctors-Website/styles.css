@@ -26,6 +26,7 @@ html {
   --grey-2: #999;
   --grey-3: #ccc;
   --grey-4: #eee;
+  --transition: 0.5s all ease-in-out;
 }
 
 .logo {
@@ -57,6 +58,25 @@ html {
   margin-bottom: 5rem;
   letter-spacing: 1rem;
   text-shadow: 0.2rem 0.2rem 1rem var(--dark); 
+}
+
+.section-1-btn {
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--dark);
+  background-color: transparent;
+  border: 0.2rem solid var(--dark);
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.section-1-btn:hover {
+  border-color: var(--main-dark);
+  background-color: var(--main-dark);
+  color: var(--light);
 }
 
 .section-2 {
