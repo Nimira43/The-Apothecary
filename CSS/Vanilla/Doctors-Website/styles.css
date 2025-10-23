@@ -88,17 +88,6 @@ html {
   z-index: 300;
 }
 
-.navbar-link::before {
-  content: '';
-  width: 0;
-  height: 0.2rem;
-  background-color: red;
-  position: absolute;
-  right: -15%;
-  bottom: -0.3rem;
-  transition: width 0.2s;
-}
-
 .sticky {
   position: fixed;
   top: 0;
@@ -113,6 +102,25 @@ html {
   text-transform: uppercase;
   position: relative;
   transition: var(--transition);
+}
+
+.navbar-link:hover {
+  color: var(--main-dark);
+}
+
+.navbar-link::before {
+  content: '';
+  width: 0;
+  height: 0.2rem;
+  background-color: var(--main-dark);
+  position: absolute;
+  right: -15%;
+  bottom: -0.3rem;
+  transition: var(--transition);
+}
+
+.navbar-link:hover::before {
+  width: 130%;
 }
 
 .section-2 {
