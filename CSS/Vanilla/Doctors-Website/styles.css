@@ -156,6 +156,10 @@ html {
   flex-direction: column;
 }
 
+.social-media {
+  margin-bottom: 5rem;
+}
+
 @media (max-width: 1200px) {
   .section-4 {
     height: 80vh;
