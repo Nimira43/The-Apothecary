@@ -84,6 +84,7 @@ html {
   height: 4rem;
   color: var(--dark);
   background-color: var(--grey-4);
+  box-shadow: 0.1rem 0.1rem 0.5rem var(--grey-2);
   position: absolute;
   z-index: 300;
 }
