@@ -6,3 +6,5 @@ const navbarLinks = document.querySelectorAll('.navbar-link')
 window.addEventListener('scroll', () => mainFn())
 
 const mainFn = () => {}
+
+window.addEventListener('resize', () => window.location.reload())
