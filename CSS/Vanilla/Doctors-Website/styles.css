@@ -166,6 +166,24 @@ html {
   display: inline-block;
 }
 
+.social-media-link i {
+  font-size: 3rem;
+  color: var(--dark);
+  transition: var(--transition);
+}
+
+.social-media-link i:hover {
+  color: var(--main-dark);
+}
+
+.copyright {
+  color: var(--dark);
+  font-size: 2rem;
+  text-align: center;
+}
+
+
+
 @media (max-width: 1200px) {
   .section-4 {
     height: 80vh;
