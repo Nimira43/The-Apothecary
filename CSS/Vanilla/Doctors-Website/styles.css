@@ -104,6 +104,10 @@ html {
   transition: var(--transition);
 }
 
+.change.navbar-link {
+  color: var(--main-dark);
+}
+
 .navbar-link:hover {
   color: var(--main-dark);
 }
@@ -117,6 +121,10 @@ html {
   right: -15%;
   bottom: -0.3rem;
   transition: var(--transition);
+}
+
+.change.navbar-link::before {
+  width: 130%;
 }
 
 .navbar-link:hover::before {
