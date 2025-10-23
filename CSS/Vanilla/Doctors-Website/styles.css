@@ -160,6 +160,12 @@ html {
   margin-bottom: 5rem;
 }
 
+.social-media-link {
+  margin: 0 2rem;
+  padding: 0.7rem;
+  display: inline-block;
+}
+
 @media (max-width: 1200px) {
   .section-4 {
     height: 80vh;
