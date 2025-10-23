@@ -11,6 +11,15 @@ const mainFn = () => {
   } else {
     navbar.classList.remove('sticky')
   }
+  
+  sections.forEach((section, i) => {
+    if (window.pageYOffset >= section.offsetTop - 10) {
+      navbarLinks.forEach((navbarLink) => {
+        navbarLink.classList.remove('change')
+      })
+      navbarLinks[i].classList.add('change')
+    }
+  })
 }
 
 mainFn()
