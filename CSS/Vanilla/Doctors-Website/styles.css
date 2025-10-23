@@ -161,7 +161,9 @@ html {
 }
 
 @media (max-width: 800px) {
-
+  .section-1-heading {
+    font-size: 4rem;
+  }
 }
 
 @media (max-width: 600px) {
