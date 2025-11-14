@@ -16,6 +16,13 @@ let verticalVelocity = Math.sqrt(Math.pow(snowSpeed, 2) - Math.pow(horizontalVel
  
 for (let i = 0; i < snowNumber; i++) {
   let speedBoost = Math.random() * 2.5 + 0.5
+  snow[i] = {
+    snowRadius: (Math.random() * size * canvasEl.width) / 2,
+    horizontalPosition: Math.floor(Math.Random() * canvasEl.width),
+    verticalPosition: Math.floor(Math.Random() * canvasEl.height),
+    horizontalVelocity: horizontalVelocity * speedBoost,
+    verticalVelocity: verticalVelocity * speedBoost 
+  }
 }
 
 function randomSign() {
