@@ -25,6 +25,11 @@ for (let i = 0; i < snowNumber; i++) {
   }
 }
 
+let timeDiff, timeLast = 0
+requestAnimationFrame(runStars)
+
+function runStars(timeNow) {}
+
 function randomSign() {
   return Math.random() >= 0.5 ? 1 : -1
 }
