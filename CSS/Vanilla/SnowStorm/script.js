@@ -30,6 +30,10 @@ requestAnimationFrame(runSnow)
 
 function runSnow(timeNow) {
   ctx.clearRect(0, 0, canvasEl.width, canvasEl.height)
+  timeDiff = timeNow - timeLast
+  timeLast = timeNow
+
+  
 }
 
 function randomSign() {
