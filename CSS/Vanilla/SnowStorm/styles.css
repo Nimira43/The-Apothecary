@@ -8,3 +8,11 @@
   z-index: -1;
 }
 
+.container {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  top: 40%;
+  
+}
