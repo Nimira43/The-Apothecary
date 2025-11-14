@@ -1,13 +1,13 @@
 const canvasEl = document.querySelector('canvas')
-const ctx = document.getContext('2d')
+const ctx = canvasEl.getContext('2d')
 
 canvasEl.width = window.innerWidth
 canvasEl.height = window.innerHeight
 
-const snowColour = '#ff4500'
+const snowColour = '#fff'
 const snowNumber = 1000
-const size = 0.005
-const speed = 0.05 
+const size = 0.008
+const speed = 0.06 
 
 let snow = []
 let snowSpeed = speed * canvasEl.width
@@ -18,8 +18,8 @@ for (let i = 0; i < snowNumber; i++) {
   let speedBoost = Math.random() * 2.5 + 0.5
   snow[i] = {
     snowRadius: (Math.random() * size * canvasEl.width) / 2,
-    horizontalPosition: Math.floor(Math.Random() * canvasEl.width),
-    verticalPosition: Math.floor(Math.Random() * canvasEl.height),
+    horizontalPosition: Math.floor(Math.random() * canvasEl.width),
+    verticalPosition: Math.floor(Math.random() * canvasEl.height),
     horizontalVelocity: horizontalVelocity * speedBoost,
     verticalVelocity: verticalVelocity * speedBoost 
   }
