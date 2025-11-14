@@ -45,6 +45,11 @@ function runSnow(timeNow) {
       Math.PI * 2
     )
     ctx.fill()
+
+    snow[i].horizontalPosition += snow[i].horizontalVelocity * timeDiff * 0.001
+
+    
+
   }
 }
 
