@@ -48,7 +48,13 @@ function runSnow(timeNow) {
 
     snow[i].horizontalPosition += snow[i].horizontalVelocity * timeDiff * 0.001
 
-    
+    if (snow[i].horizontalPosition < 0 - snow[i].snowRadius) {
+      snow[i].horizontalPosition = canvasEl.width + snow[i].snowRadius
+    } else if (
+      snow[i].horizontalPosition > canvasEl.width + snow[i].snowRadius
+    ) {
+      snow[i].horizontalPosition = 0 - snow[i].snowRadius
+    }
 
   }
 }
