@@ -41,7 +41,10 @@ function runSnow(timeNow) {
       snow[i].horizontalPosition,
       snow[i].verticalPosition,
       snow[i].snowRadius,
+      9,
+      Math.PI * 2
     )
+    ctx.fill()
   }
 }
 
