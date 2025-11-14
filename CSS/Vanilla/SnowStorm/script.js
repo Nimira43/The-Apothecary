@@ -33,7 +33,16 @@ function runSnow(timeNow) {
   timeDiff = timeNow - timeLast
   timeLast = timeNow
 
-  
+  ctx.fillStyle = snowColour
+
+  for (let i = 0; i < snowNumber; i++) {
+    ctx.beginPath()
+    ctx.arc(
+      snow[i].horizontalPosition,
+      snow[i].verticalPosition,
+      snow[i].snowRadius,
+    )
+  }
 }
 
 function randomSign() {
