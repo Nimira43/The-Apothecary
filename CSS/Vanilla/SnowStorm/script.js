@@ -12,5 +12,6 @@ const speed = 0.05
 let snow = []
 let snowSpeed = speed * canvasEl.width
 let horizontalVelocity = snowSpeed * randomSign() * Math.random()
+let verticalVelocity = Math.sqrt(Math.pow(snowSpeed, 2) - Math.pow(horizontalVelocity, 2)) * randomSign()
  
 function randomSign() {}
