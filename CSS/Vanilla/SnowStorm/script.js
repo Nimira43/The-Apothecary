@@ -1,10 +1,10 @@
-const canvasEl = document.getElementById('canvas')
-const ctx = document.getElementById('2d')
+const canvasEl = document.querySelector('canvas')
+const ctx = document.getContext('2d')
 
 canvasEl.width = window.innerWidth
 canvasEl.height = window.innerHeight
 
-const snowColour = '#fff'
+const snowColour = '#ff4500'
 const snowNumber = 1000
 const size = 0.005
 const speed = 0.05 
@@ -65,8 +65,8 @@ function runSnow(timeNow) {
     ) {
       snow[i].verticalPosition = 0 - snow[i].snowRadius
     }
-
   }
+  requestAnimationFrame(runSnow)
 }
 
 function randomSign() {
