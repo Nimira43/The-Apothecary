@@ -4,14 +4,16 @@ extern printf
 global main
 
 section .data
-  msg db 'Hello Assembly!', 10, 0 ; 10 = '\n', null-terminated
+  fmt db "%s", 10, 0            ; "%s\n" format string: 
+  msg db "Hello Assembly!", 0   ; null-terminated string
 
 section .text
 main:
-  ; Windows x64 calling convention: RCX, RDX, R8, R9
-  sub rsp, 32           ; shadow space for calls
-  lea rcx, [rel msg]    ; RCX = pointer to string
+  sub rsp, 40           ; 32 for shadow space + 8 for alignment
+  lea rcx, [rel fmt]    ; RCX = format string
+  lea rdx, [rel msg]    ; RDX = pointer to string
   call printf
-  add rsp, 32
+
+  add rsp, 40           ; restore stack
   xor eax, eax          ; return 0
   ret
