@@ -1,16 +1,17 @@
+; hello.asm - Windows x86-64 with msvcrt printf
+
+extern printf
+global main
+
 section .data
-  msg db 'Hello Assembly!', 0Ah ; message with new line
+  msg db 'Hello Assembly!', 10, 0 ; 10 = '\n', null-terminated
 
 section .text
-  global _start
-
-_start:
-  mov eax, 4        ; syscall: write
-  mov ebx, 1        ; file description: stdout
-  mov ecx, msg      ; pointer to message
-  mov edx, 13       ; length of message
-  int 0x80          ; call kernal
-
-  mov eax, 1        ; syscall: exit
-  xor ebx, ebx      ; exit code 0
-  int 0x80
+main:
+  ; Windows x64 calling convention: RCX, RDX, R8, R9
+  sub rsp, 32           ; shadow space for calls
+  lea rcx, [rel msg]    ; RCX = pointer to string
+  call printf
+  add rsp, 32
+  xor eax, eax          ; return 0
+  ret
