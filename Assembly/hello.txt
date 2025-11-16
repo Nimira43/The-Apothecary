@@ -1,0 +1,70 @@
+The Structure
+
+Assembly programs are divided into sections:
+
+.data → holds static data (strings, constants).
+.text → holds the actual code (instructions the CPU executes).
+
+The Data Section
+
+fmt db "%s", 10, 0
+msg db "Hello Assembly!", 0
+
+db = “define byte.” It stores raw bytes in memory.
+fmt is the format string for printf. It’s "%s\n" (the %s means “print a string,” 10 is ASCII newline, 0 is the null terminator).
+
+msg is the actual string "Hello Assembly!", null‑terminated (so printf knows where it ends).
+
+The Text Section
+
+global main
+section .text
+
+main:
+
+global main → tells the linker this is the entry point (main function).
+
+main: → the label where execution starts.
+
+The Instructions
+
+sub rsp, 40
+
+rsp is the stack pointer register (points to the top of the stack).
+
+Windows x64 requires the stack to be 16‑byte aligned before calling functions.
+
+We subtract 40 (32 bytes “shadow space” + 8 for alignment) to reserve space and align properly.
+
+lea rcx, [rel fmt]
+lea rdx, [rel msg]
+
+lea = “load effective address.”
+rcx = first argument register (Windows x64 convention). Here it gets the address of fmt.
+
+rdx = second argument register. Here it gets the address of msg.
+
+Together, this sets up the call: printf(fmt, msg).
+
+call printf
+Calls the printf function from the C runtime (msvcrt.dll).
+
+It looks at fmt ("%s\n") and substitutes msg ("Hello Assembly!").
+
+add rsp, 40
+Restores the stack pointer after the call (undoes the earlier sub rsp, 40).
+
+xor eax, eax
+ret
+
+xor eax, eax sets eax to 0 (return value of main = success).
+ret returns control to the operating system.
+
+Big Picture
+So the flow is:
+
+Reserve stack space and align it.
+Put arguments into registers (rcx, rdx).
+Call printf.
+Clean up the stack.
+Return 0 to the OS.
