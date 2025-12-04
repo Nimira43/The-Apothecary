@@ -6,6 +6,11 @@ export default function Home() {
   const [amount, setAmount] = createSignal(1)
   const [rates] = createResource(fetchRates)
 
+  const converted = createMemo(() => {
+    if (!rates()) return 0
+    return amount() * rates().rates.USD
+  })
+
   return (
     <main class='container centre'>
       <div class='wrapper'>
