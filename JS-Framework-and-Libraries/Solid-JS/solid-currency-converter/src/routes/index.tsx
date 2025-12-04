@@ -16,12 +16,13 @@ export default function Home() {
   })
 
   return (
-    <main class='container centre'>
+    <main class='converter'>
       <div class='wrapper'>
-        <h1 class='logo'>Currency Converter</h1>
-        <label>
-          GBP:
+        <h1 class='title'>Currency Converter</h1>
+        <div class='field'>
+          <label for='gbp'>GBP</label>
           <input
+            id='gbp'
             type='number'
             value={amount()}
             onInput={(e) => {
@@ -29,14 +30,15 @@ export default function Home() {
               if (!Number.isNaN(v)) setAmount(v)
             }}
           />
-        </label>
-
+        </div>
         <Show when={rates.loading}>
-          <p>Loading...</p>
+          <p class='status'>Loading...</p>
         </Show>
-
         <Show when={rates() && !rates.loading}>
-          <p>USD: {converted().toFixed(2)}</p>
+          <div class='result'>
+            <span>USD</span>
+            <strong>USD: {converted().toFixed(2)}</strong>
+          </div>
         </Show>
       </div>
     </main>
