@@ -19,9 +19,15 @@ export default function Home() {
           GBP:
           <input
             type='number'
+            value={amount()}
+            onInput={
+              (e) => setAmount(
+                e.currentTarget.valueAsNumber
+              )
+            }
           />
         </label>
-        <p>USD: $45</p>
+        <p>USD: {converted().toFixed(2)}</p>
       </div>
     </main>
   )
