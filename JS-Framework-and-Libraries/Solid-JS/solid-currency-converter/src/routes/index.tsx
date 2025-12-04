@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <main class='converter'>
-      <div class='wrapper'>
+      <div class='card'>
         <h1 class='title'>Currency Converter</h1>
         <div class='field'>
           <label for='gbp'>GBP</label>
@@ -36,8 +36,8 @@ export default function Home() {
         </Show>
         <Show when={rates() && !rates.loading}>
           <div class='result'>
-            <span>USD</span>
-            <strong>USD: {converted().toFixed(2)}</strong>
+            <span>US Dollars:</span>
+            <strong>${converted().toFixed(2)}</strong>
           </div>
         </Show>
       </div>
