@@ -3,6 +3,9 @@ import { createSignal, createResource, createMemo } from 'solid-js'
 function fetchRates() { }
 
 export default function Home() { 
+  const [amount, setAmount] = createSignal(1)
+  const [rates] = createResource(fetchRates)
+
   return (
     <main class='container centre'>
       <div class='wrapper'>
