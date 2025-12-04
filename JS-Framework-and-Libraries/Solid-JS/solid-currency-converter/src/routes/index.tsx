@@ -1,14 +1,18 @@
-import { createSignal, createResource, createMemo } from 'solid-js'
+import { createSignal, createResource, createMemo, Show } from 'solid-js'
 
-function fetchRates() { }
+async function fetchRates() {
+  const res = await fetch('https://open.er-api.com/v6/latest/GBP')
+  return res.json()
+}
 
-export default function Home() { 
+export default function Home() {
   const [amount, setAmount] = createSignal(1)
   const [rates] = createResource(fetchRates)
 
   const converted = createMemo(() => {
-    if (!rates()) return 0
-    return amount() * rates().rates.USD
+    const data = rates()
+    const usd = data?.rates?.USD
+    return usd ? amount() * usd : 0
   })
 
   return (
@@ -20,14 +24,20 @@ export default function Home() {
           <input
             type='number'
             value={amount()}
-            onInput={
-              (e) => setAmount(
-                e.currentTarget.valueAsNumber
-              )
-            }
+            onInput={(e) => {
+              const v = e.currentTarget.valueAsNumber
+              if (!Number.isNaN(v)) setAmount(v)
+            }}
           />
         </label>
-        <p>USD: {converted().toFixed(2)}</p>
+
+        <Show when={rates.loading}>
+          <p>Loading...</p>
+        </Show>
+
+        <Show when={rates() && !rates.loading}>
+          <p>USD: {converted().toFixed(2)}</p>
+        </Show>
       </div>
     </main>
   )
