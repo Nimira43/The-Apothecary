@@ -12,8 +12,13 @@
   box-sizing: var(--shadow-sm);
 }
 
-.token .swatch {
+.swatch {
   height: 48px;
   border-radius: var(--radius);
   margin-bottom: 0.75rem;
+}
+
+.token-name {
+  font-size: 0.9rem;
+  color: var(--text);
 }
