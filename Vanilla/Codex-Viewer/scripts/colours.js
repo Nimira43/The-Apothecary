@@ -100,16 +100,16 @@ export const colourTokens = {
     "rose-900": "#881337"
   },
   "Indigos": {
-    "indigo-50": "#eff6ff",
-    "indigo-100": "#dbeafe",
-    "indigo-200": "#bfdbfe",
-    "indigo-300": "#93c5fd",
-    "indigo-400": "#60a5fa",
-    "indigo-500": "#3b82f6",
-    "indigo-600": "#2563eb",
-    "indigo-700": "#1d4ed8",
-    "indigo-800": "#1e40af",
-    "indigo-900": "#1e3a8a",
+    "indigo-50":  "#eef2ff",
+    "indigo-100": "#e0e7ff",
+    "indigo-200": "#c7d2fe",
+    "indigo-300": "#a5b4fc",
+    "indigo-400": "#818cf8",
+    "indigo-500": "#6366f1",
+    "indigo-600": "#4f46e5",
+    "indigo-700": "#4338ca",
+    "indigo-800": "#3730a3",
+    "indigo-900": "#312e81"
   },
   "Slates": {
     "slate-50": "#eff6ff",
