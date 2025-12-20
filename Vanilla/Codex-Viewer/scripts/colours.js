@@ -40,16 +40,16 @@ export const colourTokens = {
     "green-900": "#14532d"
   },
   "Reds": {
-    "red-50": "#eff6ff",
-    "red-100": "#dbeafe",
-    "red-200": "#bfdbfe",
-    "red-300": "#93c5fd",
+    "red-50":  "#fef2f2",
+    "red-100": "#fee2e2",
+    "red-200": "#fecaca",
+    "red-300": "#fca5a5",
     "red-400": "#f87171",
     "red-500": "#ef4444",
     "red-600": "#dc2626",
-    "red-700": "#1d4ed8",
-    "red-800": "#1e40af",
-    "red-900": "#1e3a8a",
+    "red-700": "#b91c1c",
+    "red-800": "#991b1b",
+    "red-900": "#7f1d1d"
   },
   "Ambers": {
     "amber-50": "#eff6ff",
