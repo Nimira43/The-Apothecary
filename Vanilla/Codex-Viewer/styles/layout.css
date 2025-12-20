@@ -29,3 +29,9 @@ section h2 {
   font-size: 1.6rem;
   margin-bottom: 1.5rem;
 }
+
+.token-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid: 1rem;
+}
