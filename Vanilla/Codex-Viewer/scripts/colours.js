@@ -76,16 +76,16 @@ export const colourTokens = {
     "purple-900": "#581c87"
   },
   "Teals": {
-    "teal-50": "#eff6ff",
-    "teal-100": "#dbeafe",
-    "teal-200": "#bfdbfe",
-    "teal-300": "#93c5fd",
-    "teal-400": "#60a5fa",
-    "teal-500": "#3b82f6",
-    "teal-600": "#2563eb",
-    "teal-700": "#1d4ed8",
-    "teal-800": "#1e40af",
-    "teal-900": "#1e3a8a",
+    "teal-50":  "#f0fdfa",
+    "teal-100": "#ccfbf1",
+    "teal-200": "#99f6e4",
+    "teal-300": "#5eead4",
+    "teal-400": "#2dd4bf",
+    "teal-500": "#14b8a6",
+    "teal-600": "#0d9488",
+    "teal-700": "#0f766e",
+    "teal-800": "#115e59",
+    "teal-900": "#134e4a"
   },
   "Roses": {
     "rose-50": "#eff6ff",
