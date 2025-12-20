@@ -1,7 +1,13 @@
 .sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 240px;
+  height: 100vh;
   border-right: 1px solid var(--border);
   padding: 2rem 1.5rem;
+  background: var(--bg);
+  overflow-y: auto;
 }
 
 .sidebar .brand {
@@ -22,7 +28,9 @@
 }
 
 .content {
-  padding: 2rem 1.5rem;
+  margin-left: 240px;
+  padding: 3rem;
+  overflow-y: auto;
 }
 
 section {
