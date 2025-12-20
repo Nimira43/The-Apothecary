@@ -32,15 +32,14 @@ Object.entries(colourGroups).forEach(([groupName, tokens]) => {
 
 const typeScaleContainer = document.querySelector('#typography .type-scale')
 
-Object.entries(tokens).forEach(([name, value]) => {
-  const token = document.createElement('div')
-  token.className = 'token'
+Object.entries(typeScale).forEach(([name, value]) => {
+  const item = document.createElement('div')
+  token.className = 'type-item'
 
   token.innerHTML = `
-    <div class='swatch' style='background: ${value};'></div>
-    <p class='token-name'>${name}</p>
-    <p class='token-value'>${value}</p>
+    <p class='type-label'>${name} - ${size}</p>
+    <p class='type-preview' style='font-size: ${size}'>The quick brown fox jumps over the lazy poor dog.</p>
   `
-  column.appendChild(token)
+  typeScaleContainer.appendChild(item)
 })
 
