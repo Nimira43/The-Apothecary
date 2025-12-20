@@ -30,5 +30,17 @@ Object.entries(colourGroups).forEach(([groupName, tokens]) => {
 // TYPE SCALE RENDERING
 // -----------------------------
 
-const typeScaleContainer = document.querySelector('#typography .typ-scale')
+const typeScaleContainer = document.querySelector('#typography .type-scale')
+
+Object.entries(tokens).forEach(([name, value]) => {
+  const token = document.createElement('div')
+  token.className = 'token'
+
+  token.innerHTML = `
+    <div class='swatch' style='background: ${value};'></div>
+    <p class='token-name'>${name}</p>
+    <p class='token-value'>${value}</p>
+  `
+  column.appendChild(token)
+})
 
