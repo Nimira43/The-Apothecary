@@ -1,7 +1,12 @@
-import { colourTokens } from './colours.js' 
+import { colourGroups } from './colours.js' 
 
-const colourGrid = document.querySelector('#colours .token-grid')
+const colourSection = document.querySelector('#colours .token-grid')
 
+Object.entries(colourTokens).forEach(([name, value]) => {
+  const token = document.createElement('div')
+  token.className = 'token'
+
+  token.innerHTML = `
 Object.entries(colourTokens).forEach(([name, value]) => {
   const token = document.createElement('div')
   token.className = 'token'
@@ -11,6 +16,6 @@ Object.entries(colourTokens).forEach(([name, value]) => {
     <p class='token-name'>${name}</p>
     <p class='token-value'>${value}</p>
   `
-
+})
   colourGrid.appendChild(token)
 })

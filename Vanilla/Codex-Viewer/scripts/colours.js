@@ -2,7 +2,7 @@
 // Design Tokens: Colours
 //------------------------
 
-export const colourTokens = {
+export const colourGroups = {
   "Greys": {
     "grey-50":  "#fafafa",
     "grey-100": "#f5f5f5",
