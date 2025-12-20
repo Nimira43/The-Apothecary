@@ -13,4 +13,15 @@ export const colourTokens = {
   "grey-700": "#404040",
   "grey-800": "#262626",
   "grey-900": "#171717",
+  
+  "blue-50": "#eff6ff",
+  "blue-100": "#dbeafe",
+  "blue-200": "#bfdbfe",
+  "blue-300": "#93c5fd",
+  "blue-400": "#60a5fa",
+  "blue-500": "#3b82f6",
+  "blue-600": "#2563eb",
+  "blue-700": "#1d4ed8",
+  "blue-800": "#1e40af",
+  "blue-900": "#1e3a8a",
 }
