@@ -24,8 +24,12 @@
   border-radius: var(--radius);
 }
 
+.sidebar nav a:focus,
 .sidebar nav a:hover {
   color: var(--text);
+  background: var(--surface);
+  padding: 0.4rem 0.8rem;
+  outline: none;
 }
 
 .content {
