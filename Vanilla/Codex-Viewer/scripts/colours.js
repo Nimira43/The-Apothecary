@@ -64,16 +64,16 @@ export const colourTokens = {
     "amber-900": "#78350f"
   },
   "Purples": {
-    "purple-50": "#eff6ff",
-    "purple-100": "#dbeafe",
-    "purple-200": "#bfdbfe",
-    "purple-300": "#93c5fd",
-    "purple-400": "#60a5fa",
-    "purple-500": "#3b82f6",
-    "purple-600": "#2563eb",
-    "purple-700": "#1d4ed8",
-    "purple-800": "#1e40af",
-    "purple-900": "#1e3a8a",
+    "purple-50":  "#faf5ff",
+    "purple-100": "#f3e8ff",
+    "purple-200": "#e9d5ff",
+    "purple-300": "#d8b4fe",
+    "purple-400": "#c084fc",
+    "purple-500": "#a855f7",
+    "purple-600": "#9333ea",
+    "purple-700": "#7e22ce",
+    "purple-800": "#6b21a8",
+    "purple-900": "#581c87"
   },
   "Teals": {
     "teal-50": "#eff6ff",
