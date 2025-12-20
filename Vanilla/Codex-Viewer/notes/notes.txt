@@ -1,0 +1,51 @@
+Use rem for:
+
+spacing
+
+typography
+
+layout
+
+padding
+
+margins
+
+component sizing
+
+Why?
+
+Because rem scales with the user’s root font size, which improves accessibility.
+------------------------------------------------------------
+Use px for:
+
+borders
+
+hairlines
+
+shadows
+
+1px separators
+
+fine UI details
+
+Why?
+
+Because a 1px border should always be 1 physical pixel, not scale with font size.
+
+If borders scaled with rem, you’d get:
+
+1.2px borders
+
+1.4px borders
+
+fuzzy anti‑aliased edges
+------------------------------------------------------------
+Use px OR rem for:
+
+border‑radius
+
+icon sizes
+
+small UI elements
+
+Most systems use px here because it’s predictable.
