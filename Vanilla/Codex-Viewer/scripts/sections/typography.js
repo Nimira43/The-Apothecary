@@ -8,3 +8,8 @@ export const typeScale = {
   "3xl":  "1.875rem",  // 30px
   "4xl":  "2.25rem"    // 36px
 }
+
+export const fontFamilies = {
+  "sans": `system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif`,
+  "mono": `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace`
+}
