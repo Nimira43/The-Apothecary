@@ -1,0 +1,5 @@
+.sidebar {
+  width: 240px;
+  border-right: 1px solid var(--border);
+  padding: 2rem 1.5rem;
+}
