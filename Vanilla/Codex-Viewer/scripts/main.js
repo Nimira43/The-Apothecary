@@ -43,3 +43,16 @@ Object.entries(typeScale).forEach(([name, value]) => {
   typeScaleContainer.appendChild(item)
 })
 
+const typeScaleContainer = document.querySelector('#typography .type-scale')
+
+Object.entries(typeScale).forEach(([name, value]) => {
+  const item = document.createElement('div')
+  token.className = 'type-item'
+
+  token.innerHTML = `
+    <p class='type-label'>${name} - ${size}</p>
+    <p class='type-preview' style='font-size: ${size}'>The quick brown fox jumps over the lazy poor dog.</p>
+  `
+  typeScaleContainer.appendChild(item)
+})
+
