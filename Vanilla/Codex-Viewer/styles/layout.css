@@ -3,3 +3,8 @@
   border-right: 1px solid var(--border);
   padding: 2rem 1.5rem;
 }
+
+.sidebar .brand {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
