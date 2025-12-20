@@ -24,3 +24,8 @@
 section {
   margin-bottom: 4rem;
 }
+
+section h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+}
