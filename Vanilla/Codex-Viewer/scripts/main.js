@@ -1,6 +1,10 @@
 import { colourGroups } from './sections/colours.js' 
 import { typeScale } from './sections/typography.js'
-console.log(typeScale)
+
+// -----------------------------
+// COLOUR RENDERING
+// -----------------------------
+
 const colourSection = document.querySelector('#colours .colour-columns')
 
 Object.entries(colourGroups).forEach(([groupName, tokens]) => {
@@ -21,3 +25,10 @@ Object.entries(colourGroups).forEach(([groupName, tokens]) => {
   })
   colourSection.appendChild(column)
 })
+
+// -----------------------------
+// TYPE SCALE RENDERING
+// -----------------------------
+
+const typeScaleContainer = document.querySelector('#typography .typ-scale')
+
