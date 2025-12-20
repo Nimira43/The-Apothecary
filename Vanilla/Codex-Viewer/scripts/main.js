@@ -1,5 +1,5 @@
 import { colourGroups } from './sections/colours.js' 
-import { typeScale } from './sections/typography.js'
+import { typeScale, fontFamilies } from './sections/typography.js'
 
 // -----------------------------
 // COLOUR RENDERING
@@ -32,27 +32,26 @@ Object.entries(colourGroups).forEach(([groupName, tokens]) => {
 
 const typeScaleContainer = document.querySelector('#typography .type-scale')
 
-Object.entries(typeScale).forEach(([name, value]) => {
+Object.entries(typeScale).forEach(([name, size]) => {
   const item = document.createElement('div')
-  token.className = 'type-item'
+  item.className = 'type-item'
 
-  token.innerHTML = `
+  item.innerHTML = `
     <p class='type-label'>${name} - ${size}</p>
     <p class='type-preview' style='font-size: ${size}'>The quick brown fox jumps over the lazy poor dog.</p>
   `
   typeScaleContainer.appendChild(item)
 })
 
-const typeScaleContainer = document.querySelector('#typography .type-scale')
+const fontContainer = document.querySelector('#typography .font-families')
 
-Object.entries(typeScale).forEach(([name, value]) => {
+Object.entries(fontFamilies).forEach(([name, family]) => {
   const item = document.createElement('div')
-  token.className = 'type-item'
+  item.className = 'font-item'
 
-  token.innerHTML = `
-    <p class='type-label'>${name} - ${size}</p>
-    <p class='type-preview' style='font-size: ${size}'>The quick brown fox jumps over the lazy poor dog.</p>
+  item.innerHTML = `
+    <p class='font-label'>${name}</p>
+    <p class='font-preview' style='font-family: ${family}'>The quick brown fox jumps over the lazy poor dog.</p>
   `
-  typeScaleContainer.appendChild(item)
+  fontContainer.appendChild(item)
 })
-
