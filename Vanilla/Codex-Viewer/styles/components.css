@@ -9,6 +9,12 @@
   max-width: 220px;
 }
 
+.colour-column h3 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: var(--text-muted);
+}
+
 .token-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
@@ -21,6 +27,7 @@
   border-radius: var(--radius);
   padding: 1rem;
   box-sizing: var(--shadow-sm);
+  margin-bottom: 1rem;
 }
 
 .swatch {

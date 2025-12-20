@@ -1,4 +1,5 @@
-import { colourGroups } from './colours.js' 
+import { colourGroups } from './sections/colours.js' 
+import { typography } from './sections/typography.js'
 
 const colourSection = document.querySelector('#colours .colour-columns')
 

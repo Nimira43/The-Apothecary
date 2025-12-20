@@ -21,6 +21,10 @@
   color: var(--text);
 }
 
+.content {
+  padding: 2rem 1.5rem;
+}
+
 section {
   margin-bottom: 4rem;
 }
