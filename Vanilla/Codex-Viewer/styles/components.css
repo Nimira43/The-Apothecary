@@ -50,3 +50,10 @@
 .font-item {
   margin-bottom: 2rem;
 }
+
+.type-label,
+.font-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-bottom: 0.5rem;
+}
