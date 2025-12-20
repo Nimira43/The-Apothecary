@@ -88,16 +88,16 @@ export const colourTokens = {
     "teal-900": "#134e4a"
   },
   "Roses": {
-    "rose-50": "#eff6ff",
-    "rose-100": "#dbeafe",
-    "rose-200": "#bfdbfe",
-    "rose-300": "#93c5fd",
-    "rose-400": "#60a5fa",
-    "rose-500": "#3b82f6",
-    "rose-600": "#2563eb",
-    "rose-700": "#1d4ed8",
-    "rose-800": "#1e40af",
-    "rose-900": "#1e3a8a",
+    "rose-50":  "#fff1f2",
+    "rose-100": "#ffe4e6",
+    "rose-200": "#fecdd3",
+    "rose-300": "#fda4af",
+    "rose-400": "#fb7185",
+    "rose-500": "#f43f5e",
+    "rose-600": "#e11d48",
+    "rose-700": "#be123c",
+    "rose-800": "#9f1239",
+    "rose-900": "#881337"
   },
   "Indigos": {
     "indigo-50": "#eff6ff",
