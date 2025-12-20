@@ -11,4 +11,6 @@ Object.entries(colourTokens).forEach(([name, value]) => {
     <p class='token-name'>${name}</p>
     <p class='token-value'>${value}</p>
   `
+
+  colourGrid.appendChild(token)
 })
