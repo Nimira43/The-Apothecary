@@ -52,16 +52,16 @@ export const colourTokens = {
     "red-900": "#7f1d1d"
   },
   "Ambers": {
-    "amber-50": "#eff6ff",
-    "amber-100": "#dbeafe",
-    "amber-200": "#bfdbfe",
-    "amber-300": "#93c5fd",
-    "amber-400": "#60a5fa",
-    "amber-500": "#3b82f6",
-    "amber-600": "#2563eb",
-    "amber-700": "#1d4ed8",
-    "amber-800": "#1e40af",
-    "amber-900": "#1e3a8a",
+    "amber-50":  "#fffbeb",
+    "amber-100": "#fef3c7",
+    "amber-200": "#fde68a",
+    "amber-300": "#fcd34d",
+    "amber-400": "#fbbf24",
+    "amber-500": "#f59e0b",
+    "amber-600": "#d97706",
+    "amber-700": "#b45309",
+    "amber-800": "#92400e",
+    "amber-900": "#78350f"
   },
   "Purples": {
     "purple-50": "#eff6ff",
