@@ -22,3 +22,8 @@
   font-size: 0.9rem;
   color: var(--text);
 }
+
+.token-value {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
