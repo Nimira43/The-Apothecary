@@ -1,6 +1,6 @@
 import { colourGroups } from './sections/colours.js' 
-import { typography } from './sections/typography.js'
-
+import { typeScale } from './sections/typography.js'
+console.log(typeScale)
 const colourSection = document.querySelector('#colours .colour-columns')
 
 Object.entries(colourGroups).forEach(([groupName, tokens]) => {

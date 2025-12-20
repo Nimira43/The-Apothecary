@@ -1,4 +1,4 @@
-console.log('Typography')
-export const typeScale = {
 
+export const typeScale = {
+  greet: "Hi"
 }
