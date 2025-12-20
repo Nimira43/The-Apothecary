@@ -45,3 +45,8 @@
   font-size: 0.8rem;
   color: var(--text-muted);
 }
+
+.type-item,
+.font-item {
+  margin-bottom: 2rem;
+}
