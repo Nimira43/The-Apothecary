@@ -26,7 +26,12 @@ export const colourTokens = {
     "blue-700": "#1d4ed8",
     "blue-800": "#1e40af",
     "blue-900": "#1e3a8a",
-  }
+  },
+  "Greens": {
+    "green-400": "#4ade80",
+    "green-500": "#22c55e",
+    "green-600": "#16a34a",
+  },
   
   
 }
