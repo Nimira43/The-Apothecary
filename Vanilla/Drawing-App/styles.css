@@ -8,6 +8,7 @@
   --light: #fffdfa;
   --dark: #111;
   --main: #1b498d;
+  --support: #d2d816;
 }
 
 body {
@@ -23,4 +24,8 @@ body {
 
 canvas {
   border: 2px solid var(--main);
+}
+
+.toolbox {
+  background-color: var(--support);
 }
