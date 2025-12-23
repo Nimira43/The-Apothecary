@@ -5,6 +5,19 @@
 }
 
 :root {
-  --light: #fffd7a;
+  --light: #fffdfa;
   --dark: #111;
+  
+}
+
+body {
+  background-color: var(--light);
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+
 }
