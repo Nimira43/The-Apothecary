@@ -27,5 +27,9 @@ canvas {
 }
 
 .toolbox {
-  background-color: var(--support);
+  background-color: var(--main);
+  border: 1px solid var(--support);  
+  display: flex;
+  width: 804px;
+  padding: 1rem;
 }
