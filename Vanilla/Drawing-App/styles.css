@@ -36,5 +36,8 @@ canvas {
 }
 
 .toolbox > * {
-  background-color: ;
+  background-color: var(--pure-white);
+  border: none;
+  display: inline-flex;
+  
 }
