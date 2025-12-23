@@ -9,6 +9,7 @@
   --dark: #111;
   --main: #1b498d;
   --support: #d2d816;
+  --pure-white: #fff;
 }
 
 body {
@@ -32,4 +33,8 @@ canvas {
   display: flex;
   width: 804px;
   padding: 1rem;
+}
+
+.toolbox > * {
+  background-color: ;
 }
