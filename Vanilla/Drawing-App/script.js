@@ -4,3 +4,5 @@ const decreasedBtn = document.getElementById('decrease')
 const sizeEl = document.getElementById('size')
 const colourEl = document.getElementById('colour')
 const clearEl = document.getElementById('clear')
+
+const ctx = canvas.getContext('2d')
