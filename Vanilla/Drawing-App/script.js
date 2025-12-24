@@ -1,6 +1,6 @@
 const canvas = document.getElementById('canvas')
 const increaseBtn = document.getElementById('increase')
-const decreasedBtn = document.getElementById('decrease')
+const decreaseBtn = document.getElementById('decrease')
 const sizeEl = document.getElementById('size')
 const colourEl = document.getElementById('colour')
 const clearEl = document.getElementById('clear')
@@ -48,5 +48,11 @@ function updateSizeOnScreen() {
 increaseBtn.addEventListener('click', () => {
   size += 5
   if (size > 50) size = 50
+  updateSizeOnScreen()
+})
+
+decreaseBtn.addEventListener('click', () => {
+  size -= 5
+  if (size < 5) size = 5
   updateSizeOnScreen()
 })
