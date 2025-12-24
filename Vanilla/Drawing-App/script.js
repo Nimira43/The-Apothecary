@@ -25,6 +25,8 @@ canvas.addEventListener('mouseup', (e) => {
   y = undefined
 })
 
+
+
 function drawCircle(x, y) { 
   ctx.beginPath()
   ctx.arc(x, y, size, 0, Math.PI * 2)
@@ -57,4 +59,5 @@ decreaseBtn.addEventListener('click', () => {
   updateSizeOnScreen()
 })
 
-colourEl.addEventListener('change', (e) => colour =e.target.value)
+colourEl.addEventListener('change', (e) => colour = e.target.value)
+clearEl.addEventListener('clear', () => colour = ctx.clearRect(0, 0, canvas.width, canvas.height))
