@@ -6,3 +6,9 @@ const colourEl = document.getElementById('colour')
 const clearEl = document.getElementById('clear')
 
 const ctx = canvas.getContext('2d')
+
+let size = 10
+let isPressed = false
+let colour = '#000'
+let x
+let y
