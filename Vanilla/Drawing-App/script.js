@@ -25,7 +25,12 @@ canvas.addEventListener('mouseup', (e) => {
   y = undefined
 })
 
-function drawCircle() { }
+function drawCircle(x, y) { 
+  ctx.beginPath()
+  ctx.arc(x, y, size, 0, Math.PI * 2)
+  ctx.fillStyle = colour
+  ctx.fill()
+}
 
 function drawLine() { }
 
