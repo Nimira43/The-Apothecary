@@ -56,3 +56,5 @@ decreaseBtn.addEventListener('click', () => {
   if (size < 5) size = 5
   updateSizeOnScreen()
 })
+
+colourEl.addEventListener('change', (e) => colour =e.target.value)
