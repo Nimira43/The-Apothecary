@@ -24,3 +24,9 @@ canvas.addEventListener('mouseup', (e) => {
   x = undefined
   y = undefined
 })
+
+function drawCircle() { }
+
+function drawLine() { }
+
+function updateSizeOnScreen() { }
