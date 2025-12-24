@@ -15,8 +15,6 @@
   font-weight: 300
 }
 
-
-
 body {
   display: flex;
   flex-direction: column;
@@ -25,6 +23,11 @@ body {
   height: 100vh;
 }
 
-.logo {
+.logo-text {
   font-family: 'VT323', monospace;
+}
+
+.logo-img {
+  width: 150px;
+  border-radius: 50%;
 }
