@@ -1,0 +1,6 @@
+const canvas = document.getElementById('canvas')
+const increaseBtn = document.getElementById('increase')
+const decreasedBtn = document.getElementById('decrease')
+const sizeEl = document.getElementById('size')
+const colourEl = document.getElementById('colour')
+const clearEl = document.getElementById('clear')
