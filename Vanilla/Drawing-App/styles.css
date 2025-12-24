@@ -8,12 +8,11 @@
   --light: #fffdfa;
   --dark: #111;
   --main: #1b498d;
-  --support: #d2d816;
   --pure-white: #fff;
 }
 
 body {
-  background-color: var(--light);
+  background-color: var(--dark);
   font-family: 'Poppins', sans-serif;
   display: flex;
   flex-direction: column;
@@ -25,11 +24,12 @@ body {
 
 canvas {
   border: 2px solid var(--main);
+  background-color: var(--light);
 }
 
 .toolbox {
   background-color: var(--main);
-  border: 1px solid var(--support);  
+  border: 1px solid var(--main);  
   display: flex;
   width: 804px;
   padding: 1rem;
