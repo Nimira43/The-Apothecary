@@ -14,7 +14,15 @@ const randomFunction = {
   symbol: getRandomSymbol,
 }
 
-function generatePassword(lower, upper, number, symbol, length) { }
+function generatePassword(lower, upper, number, symbol, length) { 
+  let generatedPassword = ''
+  const typesCount = lower + upper + number + symbol
+  const typesArray = [
+    {lower}, {upper}, {number}, {symbol}
+  ].filter(
+    item => Object.values(item)[0]
+  )
+}
 
 function getRandomLower() {
   return String.fromCharCode(Math.floor(Math.random() * 26) + 97)
