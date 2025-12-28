@@ -7,4 +7,9 @@ const symbolsEl = document.getElementById('symbols')
 const generateEl = document.getElementById('generate')
 const clipboardEl = document.getElementById('clipboard')
 
-function generatePassword(lower, upper, number, symbol, length) {}
+function generatePassword(lower, upper, number, symbol, length) { }
+
+function getRandomLower() {}
+function getRandomUpper() {}
+function getRandomNumber() {}
+function getRandomSymbol() {}
