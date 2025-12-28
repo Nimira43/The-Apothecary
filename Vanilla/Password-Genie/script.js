@@ -12,4 +12,6 @@ function generatePassword(lower, upper, number, symbol, length) { }
 function getRandomLower() {}
 function getRandomUpper() {}
 function getRandomNumber() {}
-function getRandomSymbol() {}
+function getRandomSymbol() {
+  const symbols = '!@#$%^&*(){}[]=<>/,.'
+}
