@@ -14,7 +14,12 @@ const randomFunction = {
   symbol: getRandomSymbol,
 }
 
-clipboardEl.addEventListener('click', () => {})
+clipboardEl.addEventListener('click', () => {
+  const textarea = document.createElement('textarea')
+  const password = resultEl.innerText
+
+  if (!password) { return }
+})
 
 generateEl.addEventListener('click', () => {
   const length = +lengthEl.value
