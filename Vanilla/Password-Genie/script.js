@@ -28,10 +28,13 @@ function generatePassword(lower, upper, number, symbol, length) {
   for (let i = 0; i < length; i += typesCount) {
     typesArray.forEach(type => {
       const functionName = Object.keys(type)[0]
-      generatePassword += randomFunction[functionName]()
+      generatedPassword += randomFunction[functionName]()
     })
   }
+
+  const finalPassword = generatedPassword.slice(0, length)
   
+  return finalPassword
 }
 
 function getRandomLower() {
