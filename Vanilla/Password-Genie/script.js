@@ -14,6 +14,14 @@ const randomFunction = {
   symbol: getRandomSymbol,
 }
 
+generateEl.addEventListener('click', () => {
+  const length = +lengthEl.value
+  const hasLower = lowercaseEl.checked
+  const hasUpper = uppercaseEl.checked
+  const hasNumber = numbersEl.checked
+  const hasSymbol = symbolsEl.checked
+})
+
 function generatePassword(lower, upper, number, symbol, length) { 
   let generatedPassword = ''
   const typesCount = lower + upper + number + symbol
