@@ -80,3 +80,14 @@ body {
   /* transition-delay: 0.2s; */
 }
 
+.nav-light {
+  background-color: var(--light);
+  width: 95%;
+  padding: 40px;
+  position: relative;
+  /* transition-delay: 0s; */
+}
+
+.nav-light.visible {
+  /* transition-delay: 0.4s; */
+}
