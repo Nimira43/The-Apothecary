@@ -44,3 +44,16 @@ body {
   top: 10px;
   left: 10px;
 }
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  /* transform: translateX(-100%);
+  transition: transform 0.5s ease-in-out; */
+}
+
+.nav.visible {
+  transform: translateX(0);
+}
