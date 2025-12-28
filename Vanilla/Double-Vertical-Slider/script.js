@@ -28,5 +28,5 @@ const changeSlide = (direction) => {
       activeSlideIndex = slidesLength - 1
     }
   }
-  
+  sliderRight.style.transform = `translateY(-${activeSlideIndex * sliderHeight}px)`
 }
