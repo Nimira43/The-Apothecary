@@ -14,6 +14,8 @@ const randomFunction = {
   symbol: getRandomSymbol,
 }
 
+clipboardEl.addEventListener('click', () => {})
+
 generateEl.addEventListener('click', () => {
   const length = +lengthEl.value
   const hasLower = lowercaseEl.checked
