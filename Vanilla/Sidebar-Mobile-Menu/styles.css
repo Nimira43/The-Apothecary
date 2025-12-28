@@ -69,3 +69,14 @@ body {
 .nav-black.visible {
   /* transition-delay: 0s; */
 }
+
+.nav-orange {
+  background-color: var(--main);
+  width: 95%;
+  /* transition-delay: 0.2; */
+}
+
+.nav-orange.visible {
+  /* transition-delay: 0.2s; */
+}
+
