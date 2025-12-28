@@ -34,3 +34,12 @@ h2 {
   font-weight: 400;
 }
 
+.container {
+  background-color: var(--grey-5);
+  border-radius: 3px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 250px;
+  max-width: 100%;
+}
+
