@@ -68,3 +68,12 @@ body {
   height: 100%;
   width: 100%;
 }
+
+button {
+  background-color: var(--light);
+  border: none;
+  color: var(--grey-1);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+}
