@@ -22,6 +22,11 @@ function generatePassword(lower, upper, number, symbol, length) {
   ].filter(
     item => Object.values(item)[0]
   )
+
+  if (typesCount === 0) return ''
+
+  for (let i = 0; i < length; i += typesCount) {}
+  
 }
 
 function getRandomLower() {
