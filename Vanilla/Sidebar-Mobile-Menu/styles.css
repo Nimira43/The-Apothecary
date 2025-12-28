@@ -25,15 +25,11 @@ body {
 
 .logo-text {
   font-family: 'VT323', monospace;
+  font-size: 40px;
 }
 
 .logo-img {
   width: 100px;
-  border-radius: 50%;
-}
-
-.sidebar-img {
-  width: 75px;
   border-radius: 50%;
 }
 
@@ -104,6 +100,18 @@ body {
   right: 30px;
 }
 
+.sidebar-logo-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar-img {
+  width: 50px;
+  border-radius: 50%;
+  margin-right: 10px
+}
+
 .list {
   list-style-type: none;
   padding: 0;
@@ -116,7 +124,7 @@ body {
 
 .list li a {
   color: var(--dark);
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   text-decoration: none;
   text-transform: uppercase;
