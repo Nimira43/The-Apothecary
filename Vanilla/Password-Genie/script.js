@@ -19,6 +19,13 @@ clipboardEl.addEventListener('click', () => {
   const password = resultEl.innerText
 
   if (!password) { return }
+
+  textarea.value = password
+  document.body.appendChild(textarea)
+  textarea.select()
+  document.execCommand('copy')
+  textarea.remove()
+  alert('Password copid to clipboard.')
 })
 
 generateEl.addEventListener('click', () => {
@@ -27,6 +34,8 @@ generateEl.addEventListener('click', () => {
   const hasUpper = uppercaseEl.checked
   const hasNumber = numbersEl.checked
   const hasSymbol = symbolsEl.checked
+
+  resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
 })
 
 function generatePassword(lower, upper, number, symbol, length) { 
