@@ -4,8 +4,7 @@
   --main: #ff4500;
   --light: #fffdfa;
   --dark: #111;
-  --grey-1:  #333;
-  --grey-2: #ccc;
+  --grey:  #777;
   --transition: all 0.5s ease-in-out;
 }
 
@@ -21,6 +20,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 100vh;
+  overflow: hidden;
 }
 
 .logo-text {
@@ -28,13 +28,18 @@ body {
 }
 
 .logo-img {
-  width: 150px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.sidebar-img {
+  width: 75px;
   border-radius: 50%;
 }
 
 .nav-btn {
   border: none;
-  background: transparent;
+  background-color: transparent;
   cursor: pointer;
   font-size: 20px;
 }
@@ -49,35 +54,35 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  /* transform: translateX(-100%);
-  transition: transform 0.5s ease-in-out; */
+  height: 100vh;
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav.visible {
   transform: translateX(0);
 }
 
-.nav-black {
+.nav-dark {
   background-color: var(--dark);
   width: 60%;
   max-width: 480px;
   min-width: 320px;
-  /* transition-delay: 0.4s; */
+  transition-delay: 0.4s;
 }
 
-.nav-black.visible {
-  /* transition-delay: 0s; */
+.nav-dark.visible {
+  transition-delay: 0s;
 }
 
 .nav-orange {
   background-color: var(--main);
   width: 95%;
-  /* transition-delay: 0.2; */
+  transition-delay: 0.2s;
 }
 
 .nav-orange.visible {
-  /* transition-delay: 0.2s; */
+  transition-delay: 0.2s;
 }
 
 .nav-light {
@@ -85,11 +90,11 @@ body {
   width: 95%;
   padding: 40px;
   position: relative;
-  /* transition-delay: 0s; */
+  transition-delay: 0s;
 }
 
 .nav-light.visible {
-  /* transition-delay: 0.4s; */
+  transition-delay: 0.4s;
 }
 
 .close-btn {
@@ -101,7 +106,8 @@ body {
 
 .list {
   list-style-type: none;
-  padding: 0
+  padding: 0;
+  text-align: center;
 }
 
 .list li {
@@ -120,3 +126,5 @@ body {
 .list li a:hover {
   color: var(--main);
 }
+
+
