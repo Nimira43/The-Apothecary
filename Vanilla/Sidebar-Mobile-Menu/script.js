@@ -9,3 +9,9 @@ openBtn
     )
   )
 
+closeBtn
+  .addEventListener('click', () => 
+    nav.forEach(navEl => navEl
+      .classList.remove('visible')
+    )
+  )
