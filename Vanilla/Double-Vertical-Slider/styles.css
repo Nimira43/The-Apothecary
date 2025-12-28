@@ -90,3 +90,9 @@ button {
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
 }
+
+.slider-container .action-buttons .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
