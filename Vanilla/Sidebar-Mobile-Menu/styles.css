@@ -57,3 +57,10 @@ body {
 .nav.visible {
   transform: translateX(0);
 }
+
+.nav-black {
+  background-color: var(--dark);
+  width: 60%;
+  max-width: 480px;
+  min-width: 320px;
+}
