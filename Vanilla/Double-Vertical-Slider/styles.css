@@ -77,3 +77,10 @@ button {
   font-size: 16px;
   padding: 15px;
 }
+
+.slider-container .action-buttons button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
