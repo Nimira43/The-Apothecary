@@ -38,11 +38,11 @@ generateEl.addEventListener('click', () => {
   resultEl.innerText = generatePassword(hasLower, hasUpper, hasNumber, hasSymbol, length)
 })
 
-function generatePassword(lower, upper, number, symbol, length) { 
+function generatePassword(lower, upper, number, symbol, length) {
   let generatedPassword = ''
   const typesCount = lower + upper + number + symbol
   const typesArray = [
-    {lower}, {upper}, {number}, {symbol}
+    { lower }, { upper }, { number }, { symbol }
   ].filter(
     item => Object.values(item)[0]
   )
@@ -56,9 +56,16 @@ function generatePassword(lower, upper, number, symbol, length) {
     })
   }
 
-  const finalPassword = generatedPassword.slice(0, length)
+  const finalPassword = shuffleString(generatedPassword.slice(0, length))
   
   return finalPassword
+}
+
+function shuffleString(str) {
+  return str
+    .split('')
+    .sort(() => Math.random() - 0.5)
+    .join('')
 }
 
 function getRandomLower() {
