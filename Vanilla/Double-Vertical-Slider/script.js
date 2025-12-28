@@ -7,3 +7,5 @@ const downButton = document.querySelector('.down-button')
 const slidesLength = sliderRight.querySelectorAll('div').length
 
 let activeSlideIndex = 0
+
+sliderLeft.style.top = `-${(slidesLength - 1) * 100}`
