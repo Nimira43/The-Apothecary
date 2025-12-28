@@ -8,7 +8,6 @@
   --grey-3: #ccc;
   --grey-4: #eee;
   --grey-5: #fafafa;
-  --transition: all 0.5s ease-in-out;
 }
 
 * {
@@ -27,4 +26,13 @@ body {
   overflow: hidden;
   width: 100vw;
   height: 100vh;
+}
+
+.left-slide {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
 }
