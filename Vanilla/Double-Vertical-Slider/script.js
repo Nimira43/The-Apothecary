@@ -19,6 +19,8 @@ const changeSlide = (direction) => {
 
   if (direction == 'up') {
     activeSlideIndex++
-    
+    if (activeSlideIndex > slidesLength - 1) {
+      activeSlideIndex = 0
+    }
   }
 }
