@@ -14,4 +14,6 @@ upButton.addEventListener('click', () => changeSlide('up'))
 downButton.addEventListener('click', () => changeSlide('down'))
 
 
-const changeSlide = () => {}
+const changeSlide = (direction) => {
+  const sliderHeight = sliderContainer.clientHeight
+}
